@@ -29,21 +29,24 @@ export default function BlogPost() {
             </div>
           </div>
           <div className="row blog-details">
-            <div className="col-auto  socials ">
+            <div className="col-md-auto order-md-0 order-1  socials ">
               <div className="row align-items-center">
-                <div className="col-auto">
-                  <Image
-                    src={'/image/blog-avatar.png'}
-                    width={64}
-                    height={64}
-                    alt="hero"
-                    objectFit="contain"
-                    quality={100}
-                    priority={true}
-                    style={{
-                      borderRadius: '50%',
-                    }}
-                  />
+                <div className="col-auto  ">
+                  <div className="social-manager-dp">
+                    <Image
+                      src={'/image/blog-avatar.png'}
+                      width={64}
+                      height={64}
+                      alt="hero"
+                      objectFit="contain"
+                      quality={100}
+                      priority={true}
+                      style={{
+                        borderRadius: '50%',
+                      }}
+                      layout="responsive"
+                    />
+                  </div>
                 </div>
                 <div className="col ps-0">
                   <h6>Patricia Joy</h6>

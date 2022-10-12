@@ -7,7 +7,7 @@ export default function blogpost() {
   return (
     <div>
       <Header />
-      {/* <BlogPost /> */}
+      <BlogPost />
       <Footer />
     </div>
   );

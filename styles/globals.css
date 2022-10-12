@@ -1619,6 +1619,10 @@ header .navbar-toggler:focus {
   margin-bottom: 20px;
   display: block;
 }
+.second-blog .blog-details .social-manager-dp {
+  width: 64px;
+  height: 64px;
+}
 
 /* login  */
 
@@ -1927,6 +1931,12 @@ header .navbar-toggler:focus {
     opacity: 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .second-blog .blog-details {
+    grid-gap: 0px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .login-forms h4 {
     margin-bottom: 20px;
@@ -1967,6 +1977,9 @@ header .navbar-toggler:focus {
     font-size: 12px;
     padding: 16px 36px;
     max-width: 90%;
+  }
+  .second-blog .blog-details {
+    grid-gap: 32px;
   }
 }
 
@@ -2028,5 +2041,51 @@ header .navbar-toggler:focus {
     top: 110px;
     font-size: 10px;
     line-height: 13px;
+  }
+  .second-blog {
+    padding-top: 24px;
+    padding-top: 50px;
+  }
+  .second-blog .updates p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+  .second-blog .updates span {
+    margin-left: 40px;
+  }
+  .second-blog .updates h2 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .second-blog .blog-image-wrapper {
+    margin: 24px 0px;
+  }
+  .second-blog .blog-details .col p {
+    font-size: 13.4px;
+    line-height: 25px;
+  }
+  .second-blog .blog-details .social-manager-dp {
+    width: 40px;
+    height: 40px;
+  }
+  .second-blog .socials h6 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .second-blog .blog-details .socials p,
+  .second-blog .socials span {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .second-blog .socials span {
+    margin-bottom: 8px;
+  }
+  .second-blog .socials > div:first-child {
+    margin-bottom: 24px;
+  }
+  .second-blog .socials svg {
+    width: 17px;
+    height: 17px;
   }
 }
