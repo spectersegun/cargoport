@@ -9,7 +9,7 @@ export default function HomeSecondSec() {
         <div className="row justify-content-center top-service">
           <h3 className="">Our Services</h3>
           <h6 className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            no Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h6>
         </div>

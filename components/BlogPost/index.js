@@ -4,7 +4,7 @@ import Facebook from '../Vectors/Facebook';
 import Instagram from '../Vectors/Instagram';
 import Twitter from '../Vectors/Twitter';
 
-export default function BlogSecond() {
+export default function BlogPost() {
   return (
     <section className="second-blog">
       <div>

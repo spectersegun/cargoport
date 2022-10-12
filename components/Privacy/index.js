@@ -5,7 +5,7 @@ export default function Privacy() {
     <section>
       <div className="container privacy-wrapper">
         <div className="row">
-          <div className="col-auto terms-nav">
+          <div className="col-auto terms-nav d-none d-lg-block">
             <ul className="terms-nav-list">
               <li className="active d-none">Privacy Policy</li>
               <li className="active">Privacy Policy</li>

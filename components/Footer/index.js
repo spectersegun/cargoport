@@ -46,16 +46,16 @@ export default function Footer() {
                 <h5>Company</h5>
                 <ul>
                   <li>
-                    <Link href="#">About Us</Link>
+                    <Link href="about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact Us</Link>
+                    <Link href="contact-us">Contact Us</Link>
                   </li>
                   <li>
-                    <Link href="#">FAQs</Link>
+                    <Link href="/faq">FAQs</Link>
                   </li>
                   <li>
-                    <Link href="#">Blog</Link>
+                    <Link href="blog">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <h5>Legal</h5>
                 <ul>
                   <li>
-                    <Link href="#">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
                     <Link href="#">Terms &#38; Conditions</Link>

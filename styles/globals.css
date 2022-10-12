@@ -1318,6 +1318,36 @@ header .navbar-toggler:focus {
     grid-gap: 72px;
     margin-bottom: 180px;
   }
+  .faq .faq-top h2 {
+    font-size: 45px;
+    line-height: 57px;
+    margin-bottom: 22px;
+  }
+  .faq .faq-top p {
+    font-size: 19.5px;
+    line-height: 32px;
+  }
+  .faq .faq-top {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .faq-main h4 {
+    font-size: 20.75px;
+    line-height: 26px;
+  }
+  .faq-main p {
+    font-size: 16px;
+  }
+  .faq-bottom h5 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .faq-bottom h6 {
+    font-size: 16px;
+  }
+  .privacy-policy h2 {
+    font-size: 32.16px;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -1404,6 +1434,63 @@ header .navbar-toggler:focus {
   }
   .contact-us .contact-hero {
     padding-bottom: 48px;
+  }
+  .faq .faq-top h2 {
+    font-size: 29.3px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  .faq .faq-top p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .faq .faq-top {
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+  .faq-main {
+    padding-top: 32px;
+  }
+  .faq-main .col-12.question {
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+  .faq-main h4 {
+    font-size: 18.75px;
+    line-height: 26px;
+  }
+  .faq-main p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .faq-bottom h5 {
+    font-size: 18.75px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+  .faq-bottom h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .faq-main .ant-input-affix-wrapper {
+    height: 40px !important;
+  }
+  .privacy-policy h2 {
+    font-size: 23.44px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .privacy-policy .row {
+    margin-bottom: 24px;
+  }
+  .privacy-policy h5 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .privacy-policy p {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 
