@@ -1,8 +1,19 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import NavToggler from '../Vectors/NavToggler';
+import { useRouter } from 'next/router';
+import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+// import Collapse from 'react-bootstrap/Collapse';
 
 export default function Header() {
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+
+  const getStarted = () => {
+    router.push('/login');
+  };
+
   return (
     <header className="header">
       <nav class="navbar ">
@@ -39,8 +50,18 @@ export default function Header() {
                 <Link href="/login">Sign In</Link>
               </li>
             </ul>
-            <button className="get-started">Get Started</button>
+            <button className="get-started" onClick={() => getStarted()}>
+              Get Started
+            </button>
           </div>
+
+          {/* <Button
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+          >
+            <NavToggler />
+          </Button> */}
 
           {/* <div
             class="offcanvas offcanvas-end"

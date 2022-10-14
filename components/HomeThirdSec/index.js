@@ -4,14 +4,18 @@ import Tracklist2 from '../Vectors/Tracklist2';
 import Tracklist3 from '../Vectors/Tracklist3';
 import Tracklist4 from '../Vectors/Tracklist4';
 import Tracklist5 from '../Vectors/Tracklist5';
-Tracklist2;
+import { useRouter } from 'next/router';
+
+// Tracklist2;
 import { Radio, Form, Select, Button } from 'antd';
 
 export default function HomeThirdSec() {
+  const router = useRouter();
   const { Option } = Select;
 
   const onFinish = values => {
     console.log('Success:', values);
+    router.push('/quote-step-two');
   };
 
   const handleChange = value => {
