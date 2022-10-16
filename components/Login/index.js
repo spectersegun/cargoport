@@ -9,7 +9,7 @@ export default function Login() {
 
   const onFinish = values => {
     console.log('Success:', values);
-    router.push('#');
+    router.push('/home');
   };
 
   return (

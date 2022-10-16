@@ -6,7 +6,7 @@ export default function quotestepthree() {
   return (
     <div>
       <QuoteWrapper>
-        <QuoteStepThree />
+        <QuoteStepThree dash={true} />
       </QuoteWrapper>
     </div>
   );

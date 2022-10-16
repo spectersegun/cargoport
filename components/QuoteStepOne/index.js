@@ -6,14 +6,18 @@ import { useRouter } from 'next/router';
 import { Button, Form, Input, Radio, Select } from 'antd';
 import UploadSvg from '../Vectors/UploadSvg';
 
-export default function QuoteStepOne() {
+export default function QuoteStepOne({ dash }) {
   const router = useRouter();
 
   const { Option } = Select;
 
   const onFinish = values => {
     console.log('Success:', values);
-    router.push('/quote-step-two');
+    if (dash) {
+      router.push('/dash-quote-step-two');
+    } else {
+      router.push('/quote-step-two');
+    }
   };
 
   const handleChange = value => {
@@ -86,3 +90,7 @@ export default function QuoteStepOne() {
     </>
   );
 }
+
+QuoteStepOne.dafaulProps = {
+  dash: false,
+};

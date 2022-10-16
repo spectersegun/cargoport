@@ -6,14 +6,19 @@ import { useRouter } from 'next/router';
 import { Button, Checkbox, Form, Input, Upload, TextArea } from 'antd';
 import UploadSvg from '../Vectors/UploadSvg';
 
-export default function QuoteStepTwo() {
+export default function QuoteStepTwo({ dash }) {
   const router = useRouter();
 
   const { TextArea } = Input;
 
   const onFinish = values => {
     console.log('Success:', values);
-    router.push('/quote-step-three');
+
+    if (dash) {
+      router.push('/dash-quote-step-three');
+    } else {
+      router.push('/quote-step-three');
+    }
   };
 
   const props = {
@@ -125,3 +130,7 @@ export default function QuoteStepTwo() {
     </>
   );
 }
+
+QuoteStepTwo.dafaulProps = {
+  dash: false,
+};

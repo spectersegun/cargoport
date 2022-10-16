@@ -3,14 +3,20 @@ import SubHeader from '../QuoteWrapper/SubHeader';
 import { Button, Form, Input, Radio, Select } from 'antd';
 import { useRouter } from 'next/router';
 
-export default function QuoteStepThree() {
+export default function QuoteStepThree({ dash }) {
   const router = useRouter();
   const { Option } = Select;
   const { TextArea } = Input;
 
   const onFinish = values => {
     console.log('Success:', values);
-    router.push('/quote-step-four');
+
+    if (dash) {
+      console.log('printing');
+      router.push('/dash-quote-step-four');
+    } else {
+      router.push('/quote-step-four');
+    }
   };
 
   const handleChange = value => {
@@ -108,3 +114,6 @@ export default function QuoteStepThree() {
     </>
   );
 }
+QuoteStepThree.dafaultProps = {
+  dash: false,
+};

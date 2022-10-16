@@ -4,14 +4,20 @@ import { Button, Form, Input, Radio, Select } from 'antd';
 import QuestionMark from '../Vectors/QuestionMark';
 import { useRouter } from 'next/router';
 
-export default function QuoteStepFour() {
+export default function QuoteStepFour(dash) {
   const router = useRouter();
   const { Option } = Select;
   const { TextArea } = Input;
 
   const onFinish = values => {
     console.log('Success:', values);
-    router.push('/quote-final-step');
+
+    if (dash) {
+      console.log('printing');
+      router.push('/dash-quote-final');
+    } else {
+      router.push('/quote-final-step');
+    }
   };
 
   const handleChange = value => {
@@ -110,3 +116,7 @@ export default function QuoteStepFour() {
     </>
   );
 }
+
+QuoteStepFour.defaultProps = {
+  dash: false,
+};
