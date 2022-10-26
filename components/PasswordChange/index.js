@@ -1,26 +1,37 @@
-import { Button, Checkbox, Form, Input, Radio } from 'antd';
-
+import { Button, Form, Input } from 'antd';
 import React from 'react';
 import Link from 'next/link';
 import Checks from '../Vectors/Checks';
 
-export default function PasswordSetup() {
+export default function PasswordChange({ onOk }) {
   const onFinish = values => {
     console.log('Success:', values);
+    onOk();
   };
 
   return (
-    <div className="login-forms">
-      <div className="row">
-        <h4>Password Set-Up</h4>
-        <p className="form-info">Set up your password below</p>
-      </div>
+    <div
+      className="login-forms"
+      style={{ background: 'white', borderColor: 'white' }}
+    >
       <div className="row">
         <Form name="login" onFinish={onFinish}>
           <Form.Item
+            name="oldPassword"
+            className=""
+            rules={[
+              { required: true, message: 'Please Enter your old password!' },
+            ]}
+          >
+            <Input.Password placeholder="Enter your old password" />
+          </Form.Item>
+
+          <Form.Item
             name="newPassword"
             className=""
-            rules={[{ required: true, message: 'Please input your password!' }]}
+            rules={[
+              { required: true, message: 'Please Enter your new password!' },
+            ]}
           >
             <Input.Password placeholder="Enter your new password" />
           </Form.Item>
@@ -28,7 +39,9 @@ export default function PasswordSetup() {
           <Form.Item
             name="confirmPassword"
             className=""
-            rules={[{ required: true, message: 'Please input your password!' }]}
+            rules={[
+              { required: true, message: 'Please input your new password!' },
+            ]}
           >
             <Input.Password placeholder="Confirm your new password" />
           </Form.Item>
@@ -36,7 +49,7 @@ export default function PasswordSetup() {
           <div className="d-flex flex-column validatee ">
             <div className="d-flex align-items-center">
               <span className="checks ">
-                <Checks />
+                <Checks borderColor={'#EEEEEE'} />
               </span>
               <span className="checkss">
                 Password must be 8 or more characters long
@@ -44,7 +57,7 @@ export default function PasswordSetup() {
             </div>
             <div className="d-flex align-items-center">
               <span className="checks ">
-                <Checks />
+                <Checks borderColor={'#EEEEEE'} />
               </span>
               <span className="checkss">
                 Password must have a capital letter
@@ -52,7 +65,7 @@ export default function PasswordSetup() {
             </div>
             <div className="d-flex align-items-center">
               <span className="checks ">
-                <Checks />
+                <Checks borderColor={'#EEEEEE'} />
               </span>
               <span className="checkss">
                 Password must have a special character
@@ -60,15 +73,19 @@ export default function PasswordSetup() {
             </div>
             <div className="d-flex align-items-center">
               <span className="checks ">
-                <Checks />
+                <Checks borderColor={'#EEEEEE'} />
               </span>
               <span className="checkss">Password must have a number.</span>
             </div>
           </div>
 
           <Form.Item className="mb-3">
-            <Button className="btn mb-0" htmlType="submit">
-              Finish
+            <Button
+              className="btn mb-0 our-btn"
+              htmlType="submit"
+              style={{ width: '187px' }}
+            >
+              Confirm Password
             </Button>
           </Form.Item>
         </Form>

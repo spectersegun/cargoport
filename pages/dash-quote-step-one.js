@@ -5,7 +5,7 @@ import QuoteStepOne from '../components/QuoteStepOne';
 export default function dashquotestepone() {
   return (
     <div>
-      <DashWrapper h3="Quotes">
+      <DashWrapper h3="Quotes" tab={2}>
         <div className="quote-innner ">
           <div className="container">
             <QuoteStepOne dash={true} />

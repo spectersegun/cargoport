@@ -87,6 +87,10 @@ a {
   font-weight: 400;
   font-family: 'avenir-extralight';
 }
+.text600 {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
 .text800 {
   font-family: 'avenir-semibold';
   font-weight: 800;
@@ -94,6 +98,10 @@ a {
 .text900 {
   font-family: 'avenir-bold';
   font-weight: 900;
+}
+.ourfont14 {
+  font-size: 14.4px;
+  line-height: 20px;
 }
 
 p,
@@ -153,6 +161,29 @@ input[type='number']:focus,
   to {
     opacity: 0;
   }
+}
+
+.our-btn {
+  background: var(--fade-primary-2);
+  border-radius: 8px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 900;
+  font-size: 14.4px;
+  line-height: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: 'avenir-medium';
+  height: 52px;
+  width: max-content;
+}
+.our-btn-white {
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 .primary-text {
@@ -633,8 +664,20 @@ header .navbar-toggler:focus {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .our-btn {
+    height: 46px;
+    font-size: 12.2px;
+  }
 }
 @media only screen and (max-width: 567px) {
+  .our-btn {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 10px;
+    line-height: 13px;
+    height: 37px;
+    border-radius: 4px;
+  }
   .navbar-brand {
     font-size: 12px;
     line-height: 16px;
@@ -1735,7 +1778,7 @@ header .navbar-toggler:focus {
   position: fixed;
   bottom: 100px;
   right: 4%;
-  background: #355c7b;
+  background: var(--fade-primary-2);
   border-radius: 8px;
   height: 80px;
   align-items: center;
@@ -1757,7 +1800,7 @@ header .navbar-toggler:focus {
   padding-left: 40px;
   padding-right: 40px;
   background: #214461;
-  border: 2px solid #355c7b;
+  border: 2px solid var(--fade-primary-2);
   border-radius: 24px;
 }
 .login-forms h4 {
@@ -1785,7 +1828,7 @@ header .navbar-toggler:focus {
 .login-forms input[type='number'],
 .login-forms .ant-select-selector,
 .login-forms input[type='text'] {
-  background: #355c7b !important;
+  background: var(--fade-primary-2) !important;
   border-radius: 8px !important;
   height: 56px !important;
   border: none !important;
@@ -1802,7 +1845,7 @@ header .navbar-toggler:focus {
   margin-bottom: 16px;
 }
 .login-forms .ant-input {
-  background: #355c7b !important;
+  background: var(--fade-primary-2) !important;
   color: #849eb5;
   font-size: 14.4px;
   line-height: 20px;
@@ -1868,7 +1911,7 @@ header .navbar-toggler:focus {
   font-size: 14.4px;
   line-height: 20px;
   padding: 18px 40px;
-  background: #355c7b;
+  background: var(--fade-primary-2);
   border-radius: 8px;
   position: fixed;
   top: 140px;
@@ -1972,7 +2015,7 @@ header .navbar-toggler:focus {
   text-align: center;
 }
 .quote-innner .btn {
-  background: #355c7b;
+  background: var(--fade-primary-2);
   border-radius: 8px;
   color: var(--white);
   font-size: 14.4px;
@@ -2045,9 +2088,7 @@ header .navbar-toggler:focus {
   font-size: 11.52px;
   line-height: 16px;
 }
-.quote.step-two .ant-checkbox {
-  /* height: 16px; */
-}
+
 .quote .learn-more {
   font-size: 11.52px;
   line-height: 16px;
@@ -2347,8 +2388,7 @@ input.ant-input[type='date']::placeholder {
     height: 12px;
     margin-right: 4px;
   }
-  .quote-innner label {
-  }
+
   .quotes .quote {
     padding-top: 24px;
   }
@@ -2449,6 +2489,8 @@ input.ant-input[type='date']::placeholder {
 .dashboard header {
   grid-area: header;
   border-bottom: 1px solid #eeeeee;
+  padding-left: 2.8%;
+  padding-right: 2.8%;
 }
 .dashboard aside {
   background: #214461;
@@ -2459,6 +2501,10 @@ input.ant-input[type='date']::placeholder {
 .dashboard main {
   grid-area: main;
   overflow-y: auto;
+}
+.dashboard main > * {
+  padding-left: 2.8%;
+  padding-right: 2.8%;
 }
 .dashboard aside h3 {
   font-weight: 800;
@@ -2490,6 +2536,12 @@ input.ant-input[type='date']::placeholder {
   padding-left: 24px;
   border-radius: 8px;
   cursor: pointer;
+}
+.dashboard aside ul li span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .dashboard aside .d-md-block ul li.active {
   background: #ffffff;
@@ -2550,4 +2602,723 @@ input.ant-input[type='date']::placeholder {
 }
 .dashboard header .row {
   height: 80px;
+}
+
+/* .profile-page .top-bar .our-btn {
+  width: 184px;
+} */
+.top-bar-space {
+  padding-top: 40px;
+}
+.profile-page .dp-wrapper {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+}
+.profile-details .our-btn {
+  height: 52px;
+  margin-top: 40px;
+}
+.settings-main.row {
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
+.settings-main .profile-details {
+  color: var(--black);
+  row-gap: 8px;
+}
+.profile-details .row {
+  height: 48px;
+  align-items: center;
+  max-width: 100%;
+  width: 389px;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f6f6;
+}
+.profile-details .row:last-child {
+  border-bottom: none;
+}
+.profile-details h6 {
+  font-weight: 500;
+  font-size: 11.52px;
+  line-height: 16px;
+}
+.profile-details p {
+  font-weight: 900;
+  font-size: 11.52px;
+  line-height: 20px;
+  font-family: 'avenir-semibold';
+}
+.profile-page .upload-text {
+  color: #3aa1ff;
+  font-size: 14.4px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.profile-page .upload-text svg {
+  margin-right: 8px;
+}
+.profile-page label {
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 20px;
+}
+.profile-page input {
+  height: 56px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+.profile-page .ant-form-item {
+  margin-bottom: 32px;
+}
+.change-pass .ant-modal-title {
+  font-weight: 900;
+  font-size: 22.5px;
+  line-height: 31px;
+  font-family: 'avenir-semibold';
+  text-align: center;
+}
+.change-pass {
+  border-bottom: 1px solid #f5f5f5;
+  /* padding-left: ; */
+}
+.change-pass .ant-modal-content {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.change-pass .ant-modal-header {
+  padding: 24px;
+}
+.change-pass .our-btn {
+  background: #355c7b;
+  color: var(--white);
+  width: 187px;
+  font-weight: 900;
+  font-size: 14.4px;
+  line-height: 20px;
+}
+
+.change-pass .login-forms .validatee .checkss {
+  color: #aaaaaa;
+}
+.change-pass .login-forms .ant-input {
+  background: #ffffff !important;
+}
+.change-pass .login-forms .ant-input-affix-wrapper,
+.change-pass .login-forms .ant-input-password {
+  background: #ffffff !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 8px !important;
+}
+.change-pass .ant-input-password svg {
+  color: var(--primary);
+}
+.change-pass .ant-modal-footer {
+  display: none;
+}
+.subHeader {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+  font-family: 'avenir-semibold';
+  color: var(--primary);
+}
+
+.documents .ant-table-cell {
+  font-size: 11.52px;
+  line-height: 20px;
+}
+.documents .ant-table-wrapper {
+  margin-top: 40px;
+}
+.documents .ant-table-wrapper .our-btn {
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 4px;
+  width: 92px;
+  height: 29px;
+  padding: 8px;
+  font-family: 'avenir';
+}
+.documents .ant-table-wrapper thead .ant-table-cell::before {
+  display: none;
+}
+.documents .ant-table-wrapper thead .ant-table-cell {
+  border: none;
+}
+.documents .ant-table-wrapper .ant-pagination {
+  margin-top: 50px;
+}
+.documents .ant-table-wrapper .ant-pagination-item-link,
+.documents .ant-table-wrapper .ant-pagination-item {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* trade finance  */
+.trade-finance {
+  color: var(--black);
+  background: #fafbfd;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+.finance-top {
+  padding-top: 40px;
+}
+.finance-top h4 {
+  margin-bottom: 8px;
+  font-size: 28.13px;
+  line-height: 38px;
+  color: var(--black);
+  font-family: 'avenir-medium';
+}
+.finance-top p {
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 20px;
+  color: #757575;
+  font-family: 'avenir-extralight';
+}
+.finance-top p span {
+  color: var(--primary);
+  font-weight: 500;
+  font-family: 'avenir';
+  text-decoration: underline;
+}
+.trade-finance .payment h4 {
+  font-size: 28.13px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+.trade-finance .payment {
+  margin-top: 36px;
+  grid-gap: 20px;
+}
+.trade-finance .payment > div {
+  /* height: 127px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 17px;
+  padding-bottom: 21px;
+}
+.trade-finance .payment .our-btn {
+  margin-top: 10px;
+}
+.trade-wrapper .heading {
+  font-size: 22.5px;
+  line-height: 31px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+.trade-wrapper > div {
+  margin-bottom: 24px;
+}
+.trade-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 260px;
+  color: var(--black);
+  cursor: pointer;
+}
+.trade-card h6 {
+  font-size: 10px;
+  line-height: 13px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.trade-card h4 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.trade-card h5 {
+  font-size: 11.52px;
+  line-height: 16px;
+}
+.trade-card .badge {
+  background: rgba(53, 92, 123, 0.1);
+  border-radius: 12px;
+  font-size: 10px;
+  line-height: 13px;
+  color: var(--primary);
+  padding: 4px 8px;
+}
+.trade-card .trade-top {
+  border-bottom: 1px dashed #f5f5f5;
+  padding-bottom: 20px;
+}
+.trade-card .locations {
+  padding: 1rem 0px;
+  border-bottom: 1px dashed #f5f5f5;
+}
+.trade-card .locations svg {
+  margin-right: 14px;
+}
+.trade-card .origin-icon-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+.trade-card .origin-icon-wrapper .position-absolute {
+  transform: translate(-50%, 50%);
+  top: 2px;
+  left: 10px;
+}
+
+.trade-card .origin-icon-wrapper:last-child {
+  margin-bottom: 0px;
+}
+
+.trade-card .trade-details {
+  padding: 8px 0px;
+  border-bottom: 1px dashed #f5f5f5;
+  flex-wrap: wrap;
+}
+.trade-card .trade-details .col-auto {
+  padding: 0px 4px;
+}
+.trade-card .trade-footer {
+  margin-top: 1rem;
+  margin-bottom: 6px;
+}
+.trade-card .trade-footer p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.trade-card .trade-footer p.complete {
+  color: #307460;
+}
+.shipments-page {
+  background: #fafbfd;
+  padding-bottom: 100px;
+}
+.shipments-page .trade-wrapper {
+  margin-top: 40px;
+}
+.shipments-details-page {
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+.shipment-track {
+  margin-top: 34px;
+  background-color: var(--white);
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+}
+
+.shipment-track h5 {
+  margin-left: 16px;
+}
+.shipment-track .line-wrapper {
+  height: 0px;
+  border-top: 1px dashed #355c7b;
+  margin: 0px 6px;
+}
+.shipments-details-wrapper > div {
+  margin-bottom: 24px;
+}
+.shipments-details-card {
+  padding: 24px;
+  padding-bottom: 2px;
+  border-radius: 16px;
+  background-color: var(--white);
+  height: 100%;
+}
+.shipments-details-card h4 {
+  font-size: 22.5px;
+  line-height: 31px;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #eeeeee;
+}
+.shipments-details-card h6 {
+  color: #585858;
+  font-weight: 500;
+  font-size: 11.52px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.shipments-details-card h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+.shipments-details-card h5 svg {
+  margin-right: 8px;
+}
+
+.shipments-details-card > div {
+  padding-top: 24px;
+}
+.shipment-timeline {
+  background: #fafbfd;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+.shipping-details {
+  padding: 32px 24px;
+  color: var(--black);
+  background-color: var(--white);
+}
+.shipping-details h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+.shipping-details h6 {
+  font-weight: 900;
+  font-size: 14.4px;
+  line-height: 20px;
+  font-family: 'avenir-semibold';
+}
+.shipping-details p {
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 20px;
+}
+.shipping-details .d-flex {
+  margin-bottom: 24px;
+}
+.shipping-details .top-details {
+  border-bottom: 1px dashed #355c7b;
+  margin-bottom: 24px;
+}
+.shipping-details .bottom-details {
+  padding-bottom: 30px;
+}
+.shipment-view {
+  padding: 20px 24px 90px 20px;
+  background-color: var(--white);
+  color: var(--black);
+  margin-top: 24px;
+}
+.shipment-view h4 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'avenir-semibold';
+  margin-bottom: 8px;
+}
+.shipment-view h5 {
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+.shipment-view h6 {
+  font-size: 11.52px;
+  line-height: 16px;
+  color: var(--primary);
+  font-weight: 900;
+  font-family: 'avenir-semibold';
+  margin-bottom: 4px;
+}
+.shipment-view p {
+  font-size: 11.52px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.shipment-view .icon-wrapper {
+  margin-right: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+.shipment-view > .d-flex {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .change-pass {
+    width: 900px;
+    margin-left: 272px;
+    padding-left: 8%;
+  }
+  .shipment-track {
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .shipment-timeline .row.top-bar-space {
+    grid-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 272px calc(100vw - 272px);
+    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-areas:
+      'header  header header'
+      'main main main';
+  }
+  .profile-page .dp-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .trade-finance .payment h4 {
+    font-size: 22.13px;
+  }
+  .finance-top h4 {
+    font-size: 25.13px;
+  }
+  .trade-wrapper .heading {
+    font-size: 20.5px;
+  }
+  .shipments-details-page .top-bar-space .our-btn {
+    padding-left: 24px;
+    padding-left: 24px;
+    font-size: 12.2px;
+  }
+  .shipments-details-page .top-bar-space .our-btn.me-sm-3 {
+    margin-right: 10px !important;
+  }
+  .shipments-details-card h4 {
+    font-size: 16.5px;
+    line-height: 26px;
+  }
+  .shipments-details-card h6 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .shipments-details-card h5 {
+    font-size: 14px;
+  }
+  .shipment-timeline .row.top-bar-space {
+    grid-gap: 36px;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .profile-page .dp-wrapper {
+    width: 72px;
+    height: 72px;
+    margin: auto;
+  }
+  .profile-page .upload-text,
+  .profile-page label,
+  .profile-page input,
+  .profile-details .our-btn,
+  .change-pass .our-btn,
+  .finance-top p,
+  .trade-finance .payment p,
+  .trade-finance .payment .our-btn,
+  .shipment-track h5,
+  .shipment-view h5,
+  .shipping-details h6,
+  .shipping-details p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .profile-details .our-btn {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: max-content;
+    height: 40px;
+  }
+  .profile-page .upload-text svg {
+    width: 12px;
+    height: 12px;
+  }
+  .profile-page input {
+    height: 40px;
+    color: var(--black);
+  }
+  .profile-page .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+  .profile-page .ant-form-item {
+    margin-bottom: 24px;
+  }
+  .profile-page .edit-form .our-btn {
+    margin-top: 16px;
+  }
+  .change-pass .ant-modal-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .change-pass .ant-modal-header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .subHeader {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .documents thead .ant-table-cell {
+    font-size: 7.68px;
+    line-height: 10px;
+  }
+  .documents .ant-table-cell {
+    font-size: 6.14px;
+    line-height: 8px;
+  }
+  .documents .ant-table-tbody > tr > td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .documents .ant-table-wrapper .our-btn {
+    font-size: 6.14px;
+    line-height: 8px;
+    width: max-content;
+    height: 22px;
+  }
+  .dashboard header h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .finance-top h4 {
+    font-size: 18.75px;
+    line-height: 26px;
+  }
+  .trade-finance .payment {
+    margin-top: 24px;
+    grid-gap: 16px;
+  }
+  .trade-finance .payment > div {
+    padding: 16px;
+  }
+  .trade-finance .payment h4 {
+    font-size: 18.75px;
+    line-height: 26px;
+    margin-top: 8px;
+  }
+  .trade-finance .payment .our-btn {
+    margin-top: 24px;
+  }
+  .trade-finance .payment svg {
+    width: 24px;
+    height: 24px;
+  }
+  .trade-card h6 {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 2px;
+  }
+  .trade-card h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .trade-card .trade-top svg {
+    width: 16px;
+    height: 16px;
+  }
+  .trade-card h5 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .trade-card .locations h5 {
+    font-family: 'avenir';
+    font-weight: 400;
+  }
+  .trade-wrapper > div {
+    margin-bottom: 20px;
+  }
+  .shipment-track .track-wrapper svg {
+    width: 16px;
+    height: 16px;
+  }
+  .shipment-track h5 {
+    margin-left: 2px;
+  }
+  .shipment-track {
+    padding: 12px 8px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+  .shipment-track .line-wrapper {
+    margin-left: 2px;
+  }
+  .shipments-details-page .top-bar-space .our-btn {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .shipments-details-page .top-bar-space h4 {
+    margin-bottom: 24px;
+  }
+  .shipments-details-card h4 {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 8px;
+  }
+  .shipments-details-card h6 {
+    font-size: 7.68px;
+    line-height: 10px;
+  }
+  .shipments-details-card h5 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+  .shipments-details-wrapper > div {
+    margin-bottom: 12px;
+  }
+  .shipments-details-card > div {
+    padding-top: 16px;
+  }
+  .shipment-timeline .row.top-bar-space {
+    grid-gap: 24px;
+  }
+  .shipment-view h4 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+  .shipment-view .icon-wrapper svg {
+    width: 12px;
+    height: 12px;
+  }
+  .shipment-view .icon-wrapper {
+    margin-right: 8px;
+  }
+  .shipment-view h5 {
+    margin-bottom: 16px;
+  }
+  .shipment-view h6 {
+    font-size: 7.68px;
+    line-height: 10px;
+    margin-bottom: 2px;
+  }
+  .shipment-view p {
+    font-size: 7.68px;
+    line-height: 10px;
+    margin-bottom: 16px;
+  }
+  .shipment-view > .d-flex {
+    margin-bottom: 8px;
+  }
+  .shipment-view {
+    padding: 16px;
+  }
+  .shipping-details h4 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+  .shipping-details .d-flex {
+    margin-bottom: 16px;
+  }
+  .shipping-details {
+    padding: 12px 16px;
+  }
 }

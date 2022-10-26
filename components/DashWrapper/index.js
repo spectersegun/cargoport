@@ -9,8 +9,12 @@ import AsideSettings from '../Vectors/AsideSettings';
 import AsideShipments from '../Vectors/AsideShipments';
 import AsideTrade from '../Vectors/AsideTrade';
 
-export default function DashWrapper({ children, h3 }) {
+export default function DashWrapper({ children, h3, tab }) {
   var asidepage = 1;
+  if (tab) {
+    asidepage = tab;
+  }
+
   return (
     <div className="dashboard">
       <header>
@@ -60,60 +64,107 @@ export default function DashWrapper({ children, h3 }) {
                     </Link>
                   </li>
                 )}
-                {/* <li className="">
-                  <Link href="/home">
-                    <>
-                      {aside == 1 ? (
-                        <AsideDashboard color="second" />
-                      ) : (
-                        <AsideDashboard />
-                      )}
-                      Dashboard
-                    </>
-                  </Link>
-                </li> */}
               </>
 
-              <li className="">
-                <Link href="/dash-no-quote">
-                  <span>
-                    <AsideQuote />
-                    Quotes
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <>
-                    <AsideShipments />
-                    Shipments
-                  </>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <>
-                    <AsideTrade />
-                    Trade Finance
-                  </>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <>
-                    <AsideDocument />
-                    Documents
-                  </>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <>
-                    <AsideSettings />
-                    Settings
-                  </>
-                </Link>
-              </li>
+              {asidepage == 2 ? (
+                <li className="active">
+                  <Link href="/dash-no-quote">
+                    <span>
+                      <AsideQuote color="second" />
+                      Quotes
+                    </span>
+                  </Link>
+                </li>
+              ) : (
+                <li className="">
+                  <Link href="/dash-no-quote">
+                    <span>
+                      <AsideQuote />
+                      Quotes
+                    </span>
+                  </Link>
+                </li>
+              )}
+
+              {asidepage == 3 ? (
+                <li className="active">
+                  <Link href="/shipments">
+                    <span>
+                      <AsideShipments color="second" />
+                      Shipments
+                    </span>
+                  </Link>
+                </li>
+              ) : (
+                <li className="">
+                  <Link href="/shipments">
+                    <span>
+                      <AsideShipments />
+                      Shipments
+                    </span>
+                  </Link>
+                </li>
+              )}
+
+              {asidepage == 4 ? (
+                <li className="active">
+                  <Link href="/trade-finance">
+                    <span>
+                      <AsideTrade color="second" />
+                      Trade Finance
+                    </span>
+                  </Link>
+                </li>
+              ) : (
+                <li className="">
+                  <Link href="/trade-finance">
+                    <span>
+                      <AsideTrade />
+                      Trade Finance
+                    </span>
+                  </Link>
+                </li>
+              )}
+
+              {asidepage == 5 ? (
+                <li className="active">
+                  <Link href="/documents">
+                    <span>
+                      <AsideDocument color="second" />
+                      Documents
+                    </span>
+                  </Link>
+                </li>
+              ) : (
+                <li className="">
+                  <Link href="/documents">
+                    <span>
+                      <AsideDocument />
+                      Documents
+                    </span>
+                  </Link>
+                </li>
+              )}
+
+              {asidepage == 6 ? (
+                <li className="active">
+                  <Link href="/settings">
+                    <span>
+                      <AsideSettings color="second" />
+                      Settings
+                    </span>
+                  </Link>
+                </li>
+              ) : (
+                <li className="">
+                  <Link href="/settings">
+                    <span>
+                      <AsideSettings />
+                      Settings
+                    </span>
+                  </Link>
+                </li>
+              )}
             </ul>
             <div className="bottom">
               <button>
