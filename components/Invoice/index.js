@@ -56,7 +56,7 @@ export default function Invoice({ insurance }) {
   };
 
   return (
-    <section className="invoice-page">
+    <section className="invoice-page client-bg">
       <div className="container-fluid">
         <div className="row top-bar-space">
           <div className="col-lg-7">
@@ -89,7 +89,7 @@ export default function Invoice({ insurance }) {
                     <div className="col-auto">
                       <p className="no">{item.no}</p>
                     </div>
-                    <div className="col-auto items">
+                    <div className="col items">
                       <h5>Custom Brokage &#38; Terminal </h5>
                       <h6>by Logigrains</h6>
                     </div>
@@ -100,9 +100,12 @@ export default function Invoice({ insurance }) {
                   </div>
                 </div>
               ))}
-              <div className="content d-flex sub-total justify-content-end">
+              <div className="content d-flex sub-total ">
                 <div className="col-auto">
-                  <p className="ourfont14">Sub Total</p>
+                  <div className="no"></div>
+                </div>
+                <div className="col">
+                  <p className="ourfont14 text-sm-end">Sub Total</p>
                 </div>
                 <div className="col-auto">
                   <h4 className="ourfont14">N 5,000,000.00</h4>
@@ -110,9 +113,12 @@ export default function Invoice({ insurance }) {
               </div>
 
               {insurance ? (
-                <div className="content d-flex sub-total justify-content-end">
+                <div className="content d-flex sub-total ">
                   <div className="col-auto">
-                    <p className="ourfont14">
+                    <div className="no"></div>
+                  </div>
+                  <div className="col">
+                    <p className="ourfont14 text-sm-end">
                       Trade finance Interest Charges (7%)
                     </p>
                   </div>
@@ -124,8 +130,11 @@ export default function Invoice({ insurance }) {
                 ''
               )}
 
-              <div className="content d-flex total justify-content-end">
+              <div className="content d-flex total">
                 <div className="col-auto">
+                  <div className="no"></div>
+                </div>
+                <div className="col text-sm-end">
                   <p className="">Total</p>
                 </div>
                 <div className="col-auto">

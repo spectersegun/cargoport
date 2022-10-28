@@ -6,7 +6,9 @@ export default function Shipments() {
     <section className="shipments-page">
       <div className="container-fluid">
         <div className="row justify-content-between top-bar-space">
-          <h4 className="subHeader col-auto ">Total Shipments - 10</h4>
+          <h4 className="subHeader subHeader-2 col-auto ">
+            Total Shipments - 10
+          </h4>
           <div className="col-auto ">
             <button className="our-btn">Start new shipment</button>
           </div>

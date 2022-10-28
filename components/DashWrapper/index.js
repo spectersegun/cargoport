@@ -68,7 +68,7 @@ export default function DashWrapper({ children, h3, tab }) {
 
               {asidepage == 2 ? (
                 <li className="active">
-                  <Link href="/dash-no-quote">
+                  <Link href="/quotes">
                     <span>
                       <AsideQuote color="second" />
                       Quotes
@@ -77,7 +77,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 </li>
               ) : (
                 <li className="">
-                  <Link href="/dash-no-quote">
+                  <Link href="/quotes">
                     <span>
                       <AsideQuote />
                       Quotes
