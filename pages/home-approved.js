@@ -2,11 +2,11 @@ import React from 'react';
 import DashboardHome from '../components/DashboardHome';
 import DashWrapper from '../components/DashWrapper';
 
-export default function home() {
+export default function homeapproved() {
   return (
     <div>
       <DashWrapper tab="1" h3="Dashboard">
-        <DashboardHome />
+        <DashboardHome approved={true} />
       </DashWrapper>
     </div>
   );

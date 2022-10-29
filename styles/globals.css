@@ -2787,24 +2787,22 @@ input.ant-input[type='date']::placeholder {
   min-height: 100%;
   padding-bottom: 100px;
 }
-.finance-top {
-  padding-top: 40px;
-}
-.finance-top h4 {
+
+.naming-top h4 {
   margin-bottom: 8px;
   font-size: 28.13px;
   line-height: 38px;
   color: var(--black);
   font-family: 'avenir-medium';
 }
-.finance-top p {
+.naming-top p {
   font-weight: 400;
   font-size: 14.4px;
   line-height: 20px;
   color: #757575;
   font-family: 'avenir-extralight';
 }
-.finance-top p span {
+.naming-top p span {
   color: var(--primary);
   font-weight: 500;
   font-family: 'avenir';
@@ -3450,8 +3448,56 @@ input.ant-input[type='date']::placeholder {
   font-size: 10px;
   line-height: 13px;
 }
-.subHeader-2{
-  font-family: "avenir-semibold";
+.subHeader-2 {
+  font-family: 'avenir-semibold';
+}
+.dashboard-cards {
+  margin-top: 40px;
+}
+.dashboard-cards .card-details {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 26px 24px 30px;
+}
+.dashboard-cards .card-details h5 {
+  font-weight: 500;
+  font-size: 28.13px;
+  line-height: 38px;
+  font-family: 'avenir-medium';
+  margin-bottom: 8px;
+}
+.dashboard-cards .card-details p {
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 20px;
+}
+.dash-home .approved-alert {
+  padding: 14px 16px;
+  background: rgba(33, 68, 97, 0.05);
+  margin-top: 24px;
+}
+.dash-home .approved-alert p {
+  font-size: 14.4px;
+  line-height: 20px;
+  color: var(--primary);
+}
+.dash-home .approved-alert .our-btn {
+  padding: 8px;
+  font-size: 10px;
+  line-height: 13px;
+  height: max-content;
+  background: var(--primary);
+  border-radius: 4px;
+}
+.dash-home .approved-alert .px-0 {
+  display: flex;
+  align-items: start;
+}
+.dash-home .approved-alert .flex-wrap {
+  grid-gap: 12px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -3485,7 +3531,7 @@ input.ant-input[type='date']::placeholder {
   .trade-finance .payment h4 {
     font-size: 22.13px;
   }
-  .finance-top h4 {
+  .naming-top h4 {
     font-size: 25.13px;
   }
   .trade-wrapper .heading {
@@ -3513,6 +3559,9 @@ input.ant-input[type='date']::placeholder {
   .shipment-timeline .row.top-bar-space {
     grid-gap: 36px;
   }
+  .dashboard-cards {
+    grid-gap: 20px;
+  }
 }
 @media only screen and (max-width: 567px) {
   .profile-page .dp-wrapper {
@@ -3525,7 +3574,7 @@ input.ant-input[type='date']::placeholder {
   .profile-page input,
   .profile-details .our-btn,
   .change-pass .our-btn,
-  .finance-top p,
+  .naming-top p,
   .trade-finance .payment p,
   .trade-finance .payment .our-btn,
   .shipment-track h5,
@@ -3534,7 +3583,8 @@ input.ant-input[type='date']::placeholder {
   .shipping-details p,
   .invoice-table-wrapper .total p,
   .invoice-table-wrapper .total h4,
-  .quotation-charges h5 {
+  .quotation-charges h5,
+  .dashboard-cards .card-details p {
     font-size: 10px;
     line-height: 13px;
   }
@@ -3604,7 +3654,8 @@ input.ant-input[type='date']::placeholder {
     font-size: 12px;
     line-height: 16px;
   }
-  .documents .ant-table-cell {
+  .documents .ant-table-cell,
+  .documents .ant-table-wrapper .our-btn {
     font-size: 6.14px;
     line-height: 8px;
   }
@@ -3613,8 +3664,6 @@ input.ant-input[type='date']::placeholder {
     padding-bottom: 12px;
   }
   .documents .ant-table-wrapper .our-btn {
-    font-size: 6.14px;
-    line-height: 8px;
     width: max-content;
     height: 22px;
   }
@@ -3622,9 +3671,14 @@ input.ant-input[type='date']::placeholder {
     font-size: 12px;
     line-height: 16px;
   }
-  .finance-top h4 {
+  .naming-top h4,
+  .trade-finance .payment h4,
+  .dashboard-cards .card-details h5 {
     font-size: 18.75px;
     line-height: 26px;
+  }
+  .naming-top {
+    grid-gap: 24px;
   }
   .trade-finance .payment {
     margin-top: 24px;
@@ -3634,8 +3688,6 @@ input.ant-input[type='date']::placeholder {
     padding: 16px;
   }
   .trade-finance .payment h4 {
-    font-size: 18.75px;
-    line-height: 26px;
     margin-top: 8px;
   }
   .trade-finance .payment .our-btn {
@@ -3755,11 +3807,13 @@ input.ant-input[type='date']::placeholder {
     margin-right: 32px;
     margin-left: 10px;
   }
-  .quotation-page .container-fluid {
+  .quotation-page .container-fluid,
+  .dash-home .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .quotation-page .container-fluid > div {
+  .quotation-page .container-fluid > div,
+  .dash-home .container-fluid > div {
     padding-left: 2.8%;
     padding-right: 2.8%;
   }
@@ -3838,5 +3892,29 @@ input.ant-input[type='date']::placeholder {
   .documents .ant-table-wrapper .status {
     display: block;
     width: max-content;
+  }
+  .dash-home .approved-alert p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .dash-home .approved-alert svg {
+    width: 16px;
+    height: 16px;
+  }
+  .dash-home .approved-alert .our-btn {
+    font-size: 6.14px;
+    line-height: 8px;
+  }
+  .dashboard-cards {
+    margin-top: 24px;
+    grid-gap: 12px;
+  }
+  .dashboard-cards svg {
+    width: 24px;
+    height: 24px;
+  }
+  .dashboard-cards .card-details{
+    padding: 1rem;
   }
 }

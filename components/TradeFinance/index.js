@@ -1,4 +1,5 @@
 import React from 'react';
+import NamingTop from '../NamingTop';
 import TradeCard from '../TradeCard';
 import LocationLine from '../Vectors/LocationLine';
 import Locations from '../Vectors/Locations';
@@ -9,13 +10,11 @@ export default function TradeFinance() {
   return (
     <section className="trade-finance">
       <div className="container-fluid">
-        <div className="row finance-top ">
-          <h4 className="">Hello Dammy,</h4>
-          <p>
-            Want to learn more about our trade finance?{' '}
-            <span>See how it works</span>
-          </p>
-        </div>
+        <NamingTop
+          h4="Hello Dammy,"
+          p="Want to learn more about our trade finance?"
+          span="See how it works"
+        />
         <div className="payment row mx-0">
           <div className="col-md bg-white">
             <div
@@ -45,7 +44,7 @@ export default function TradeFinance() {
         </div>
         <div className="row trade-wrapper">
           <h5 className="heading text600">Trade Finance Shipments - 3</h5>
-          <TradeCard shippingType={"import"}/>
+          <TradeCard shippingType={'import'} />
           <TradeCard completed={true} />
           <TradeCard completed={true} />
         </div>
