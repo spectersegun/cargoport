@@ -2,7 +2,7 @@ import { Button, Checkbox, Form, Input, Radio } from 'antd';
 
 import React from 'react';
 import Link from 'next/link';
-import Checks from '../Vectors/checks';
+import Checks from '../Vectors/Checks';
 
 export default function PasswordSetup() {
   const onFinish = values => {

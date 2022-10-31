@@ -6,13 +6,17 @@ import DidsThree from '../Vectors/DidsThree';
 import DidsFive from '../Vectors/DidsFive';
 import DidsSix from '../Vectors/DidsSix';
 import FooterPay from '../Vectors/FooterPay';
+import { useRouter } from 'next/router';
 import { Radio, Form, Select, Button } from 'antd';
+import Link from 'next/link';
 
 export default function HomeFirstSec() {
+  const router = useRouter();
   const { Option } = Select;
 
   const onFinish = values => {
     console.log('Success:', values);
+    router.push('/quote-step-two');
   };
 
   const handleChange = value => {
@@ -33,8 +37,11 @@ export default function HomeFirstSec() {
 
           <div className="row justify-content-center  explain">
             <div className="col-sm-auto">
-              <button className="btn ">Ship with Cargoport</button>
+              <Link href="/quote-step-one">
+                <button className="btn ">Ship with Cargoport</button>
+              </Link>
             </div>
+
             <div className="col-sm-auto">
               <button className="btn hiworks">
                 {' '}

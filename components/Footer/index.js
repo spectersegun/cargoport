@@ -9,7 +9,9 @@ export default function Footer() {
         <h3>Be in charge of your supply chain</h3>
         <div className="row justify-content-center  explain">
           <div className="col-sm-auto">
-            <button className="btn ">Ship with Cargoport</button>
+            <Link href="/quote-step-one">
+              <button className="btn ">Ship with Cargoport</button>
+            </Link>
           </div>
           <div className="col-sm-auto">
             <button className="btn hiworks">

@@ -88,7 +88,6 @@ export default function ContactUs() {
               rules={[
                 { required: true, message: 'Please input your message!' },
               ]}
-              type="email"
             >
               <TextArea
                 onChange={onChange}

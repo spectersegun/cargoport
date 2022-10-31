@@ -2,11 +2,15 @@ import { Button, Checkbox, Form, Input, Radio } from 'antd';
 
 import React from 'react';
 import Link from 'next/link';
-import Checks from '../Vectors/checks';
+import Checks from '../Vectors/Checks';
+import { useRouter } from 'next/router';
 
 export default function PasswordReset() {
+  const router = useRouter();
+
   const onFinish = values => {
     console.log('Success:', values);
+    router.push('/login');
   };
 
   return (

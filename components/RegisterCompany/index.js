@@ -1,13 +1,16 @@
 import { Button, Checkbox, Form, Input, Select } from 'antd';
 
 import React from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 export default function RegisterCompany() {
+  const router = useRouter();
   const { Option } = Select;
 
   const onFinish = values => {
     console.log('Success:', values);
+    router.push('/password-setup');
   };
 
   const handleChange = value => {
