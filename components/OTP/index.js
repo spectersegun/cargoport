@@ -2,8 +2,10 @@ import { Button, Checkbox, Form, Input } from 'antd';
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function OTP() {
+  const router = useRouter();
   const onFinish = values => {
     console.log('Success:', values);
   };

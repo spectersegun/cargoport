@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Space } from 'antd';
+import { Input } from 'antd';
 import { AudioOutlined, SearchOutlined } from '@ant-design/icons';
 
 export default function Faq() {
