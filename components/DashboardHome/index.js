@@ -1,8 +1,8 @@
 import React from 'react';
 import DashApprovedAlert from '../DashApprovedAlert';
 import DashboardCards from '../DashboardCards';
+import Grap1 from '../Graph1';
 import NamingTop from '../NamingTop';
-import AsideQuote from '../Vectors/AsideQuote';
 
 export default function DashboardHome({ approved }) {
   return (
@@ -12,11 +12,14 @@ export default function DashboardHome({ approved }) {
           h4="Welcome Dammy,"
           p="Would you like to start a shipment today?"
           butt="Start new shipment"
+          hrefs={'quote-step-one'}
         />
 
         {approved && <DashApprovedAlert />}
 
         <DashboardCards />
+
+        <Grap1 />
       </div>
     </section>
   );

@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ShippingDetails from '../ShippingDetails';
 import Right from '../Vectors/Right';
+import Mappings from '../Mappings';
+import { Modal } from 'antd';
 
 export default function ShipmentTimeline() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section className="shipment-timeline">
       <div className="container-fluid">
@@ -13,7 +26,9 @@ export default function ShipmentTimeline() {
               style={{ flexWrap: 'wrap' }}
             >
               <h4 className="subHeader">Shipment Timeline View</h4>
-              <button className="our-btn">View Route Map</button>
+              <button className="our-btn" onClick={showModal}>
+                View Route Map
+              </button>
             </div>
             <div className="shipment-view">
               <div className="d-flex">
@@ -140,6 +155,15 @@ export default function ShipmentTimeline() {
           </div>
         </div>
       </div>
+      <Modal
+        title="Shipment Tracking"
+        open={isModalOpen}
+        onCancel={handleCancel}
+        width={900}
+        className="change-pass"
+      >
+        <Mappings />
+      </Modal>
     </section>
   );
 }

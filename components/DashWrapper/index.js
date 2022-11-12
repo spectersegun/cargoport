@@ -49,7 +49,7 @@ export default function DashWrapper({ children, h3, tab }) {
                   <li className="active">
                     <Link href="/home">
                       <span>
-                        <AsideDashboard color="second" />
+                        <AsideDashboard color="#214461" />
                         Dashboard
                       </span>
                     </Link>
@@ -70,7 +70,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 <li className="active">
                   <Link href="/quotes">
                     <span>
-                      <AsideQuote color="second" />
+                      <AsideQuote color="#214461" />
                       Quotes
                     </span>
                   </Link>
@@ -90,7 +90,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 <li className="active">
                   <Link href="/shipments">
                     <span>
-                      <AsideShipments color="second" />
+                      <AsideShipments color="#214461" />
                       Shipments
                     </span>
                   </Link>
@@ -110,7 +110,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 <li className="active">
                   <Link href="/trade-finance">
                     <span>
-                      <AsideTrade color="second" />
+                      <AsideTrade color="#214461" />
                       Trade Finance
                     </span>
                   </Link>
@@ -130,7 +130,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 <li className="active">
                   <Link href="/documents">
                     <span>
-                      <AsideDocument color="second" />
+                      <AsideDocument color="#214461" />
                       Documents
                     </span>
                   </Link>
@@ -150,7 +150,7 @@ export default function DashWrapper({ children, h3, tab }) {
                 <li className="active">
                   <Link href="/settings">
                     <span>
-                      <AsideSettings color="second" />
+                      <AsideSettings color="#214461" />
                       Settings
                     </span>
                   </Link>

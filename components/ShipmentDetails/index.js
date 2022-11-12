@@ -1,13 +1,27 @@
 import Link from 'next/link';
-import React from 'react';
 import AdditionalDetails from '../AdditionalDetails';
 import CargoDetails from '../CargoDetails';
 import ServiceProvider from '../ServiceProvider';
 import ShipmentType from '../ShipmentType';
 import BookingConfirmed from '../Vectors/BookingConfirmed';
 import InTransit from '../Vectors/InTransit';
+import { Modal } from 'antd';
+import React, { useState } from 'react';
+import PasswordChange from '../PasswordChange';
+import Mappings from '../Mappings';
 
 export default function ShipmentDetails() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section
       className="shipments-details-page"
@@ -20,7 +34,9 @@ export default function ShipmentDetails() {
             <Link href="/shipment-timeline">
               <button className="our-btn me-sm-3">View Timeline</button>
             </Link>
-            <button className="our-btn our-btn-white">View Route Map</button>
+            <button className="our-btn our-btn-white" onClick={showModal}>
+              View Route Map
+            </button>
           </div>
         </div>
       </div>
@@ -64,6 +80,15 @@ export default function ShipmentDetails() {
           </div>
         </div>
       </div>
+      <Modal
+        title="Shipment Tracking"
+        open={isModalOpen}
+        onCancel={handleCancel}
+        width={900}
+        className="change-pass"
+      >
+        <Mappings />
+      </Modal>
     </section>
   );
 }

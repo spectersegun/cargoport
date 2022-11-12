@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AdditionalDetails() {
   return (
-    <div className="shipments-details-card">
+    <div className="shipments-details-card ">
       <h4 className="text800">Additional Details</h4>
       <div className="d-flex mx-0 flex-lg-row flex-column">
         <div className="col-lg-6">

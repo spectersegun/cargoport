@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 import React, { useState } from 'react';
 import PasswordChange from '../PasswordChange';
 
-export default function Profile() {
+export default function Profile({ admin }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -20,7 +20,7 @@ export default function Profile() {
       <div className="container-fluid">
         <div className="row top-bar justify-content-end top-bar-space">
           <div className="col-auto d-sm-block d-none">
-            <button className="our-btn" onClick={showModal}>
+            <button className="our-btn" onClick={() => showModal}>
               Change Password
             </button>
           </div>
@@ -84,7 +84,7 @@ export default function Profile() {
             </div>
 
             <div className="row justify-content-start">
-              <Link href="/edit-profile">
+              <Link href={admin ? 'admin-edit-profile' : '/edit-profile'}>
                 <button className="our-btn col-auto me-3">Edit Profile</button>
               </Link>
 

@@ -14,10 +14,6 @@ export default function CargoDetails() {
           <h5>40 FEET</h5>
         </div>
         <div>
-          <h6>SIZE OF CONTAINERS:</h6>
-          <h5>40 FEET</h5>
-        </div>
-        <div>
           <h6>GOODS TYPE:</h6>
           <h5>Solid Minerals</h5>
         </div>

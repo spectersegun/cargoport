@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React from 'react';
 
-export default function NamingTop({ h4, p, span, butt }) {
+export default function NamingTop({ h4, p, span, butt, hrefs }) {
   return (
     <div className="row top-bar-space naming-top justify-content-between">
       <div className="col-sm-auto">
@@ -11,9 +12,11 @@ export default function NamingTop({ h4, p, span, butt }) {
       </div>
 
       {butt && (
-        <div className="col-sm-auto">
-          <button className="our-btn">{butt}</button>
-        </div>
+        <Link href={hrefs}>
+          <div className="col-sm-auto">
+            <button className="our-btn">{butt}</button>
+          </div>
+        </Link>
       )}
     </div>
   );
