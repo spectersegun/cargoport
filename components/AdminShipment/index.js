@@ -27,11 +27,11 @@ export default function AdminShipment() {
         </div>
         <div className="row tabs-wrapping">
           <Tabs defaultActiveKey="1">
-            <Tabs.TabPane tab="New Orders" key="item-1">
+            <Tabs.TabPane tab="Ongoing Shipments" key="item-1">
               <AdminQuoteTable />
             </Tabs.TabPane>
-            <Tabs.TabPane tab="All Orders" key="item-2">
-              <RegisteredMembers />
+            <Tabs.TabPane tab="All Shipments" key="item-2">
+              <AdminQuoteTable />
             </Tabs.TabPane>
           </Tabs>
         </div>
