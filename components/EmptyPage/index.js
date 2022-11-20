@@ -5,7 +5,7 @@ import SubHeader from '../QuoteWrapper/SubHeader';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-export default function EmptyPage({ submitted, h4, h5, icon, button }) {
+export default function EmptyPage({ submitted, h4, h5, icon, button, href }) {
   const router = useRouter();
   var border = 'border-0';
 
