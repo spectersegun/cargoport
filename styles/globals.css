@@ -107,6 +107,10 @@ a {
   font-size: 14.4px;
   line-height: 20px;
 }
+.ourfont16 {
+  font-size: 16px;
+  line-height: 24px;
+}
 
 .grid-gap-16 {
   grid-gap: 16px;
@@ -1232,6 +1236,7 @@ header .navbar-toggler:focus {
   line-height: 25px;
   color: #1890ff;
   font-weight: 400;
+  cursor: pointer;
 }
 .terms-nav li.active {
   font-family: 'avenir-semibold';
@@ -1289,6 +1294,9 @@ header .navbar-toggler:focus {
   font-size: 14.4px;
   line-height: 25px;
   font-family: 'avenir-extralight';
+}
+.privacy-policy .row span.sub-link a {
+  color: var(--our-blue) !important;
 }
 
 .privacy-policy .row span {

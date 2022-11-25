@@ -37,19 +37,19 @@ export default function AboutUs() {
             <div>
               <div>
                 <Image
-                  src={'/image/ceo1.png'}
+                  src={'/image/about-0.jpeg'}
                   width={295}
                   height={295}
-                  alt="hero"
-                  objectFit="contain"
+                  alt="Chisom Azubuike"
+                  objectFit="cover"
                   quality={100}
                   priority={true}
                   layout="responsive"
                 />
               </div>
               <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
+                <h5>Chisom Azubuike</h5>
+                <p>CEO / Co-Founder</p>
               </div>
             </div>
           </div>
@@ -58,19 +58,19 @@ export default function AboutUs() {
             <div>
               <div>
                 <Image
-                  src={'/image/ceo2.png'}
+                  src={'/image/about-1.jpeg'}
                   width={295}
                   height={295}
-                  alt="hero"
-                  objectFit="contain"
+                  alt="Aniefiok Reuben"
+                  objectFit="cover"
                   quality={100}
                   priority={true}
                   layout="responsive"
                 />
               </div>
               <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
+                <h5>Aniefiok Reuben</h5>
+                <p>CTO / Co-Founder </p>
               </div>
             </div>
           </div>
@@ -79,19 +79,19 @@ export default function AboutUs() {
             <div>
               <div>
                 <Image
-                  src={'/image/ceo1.png'}
+                  src={'/image/about-inec.jpeg'}
                   width={295}
                   height={295}
                   alt="hero"
-                  objectFit="contain"
+                  objectFit="cover"
                   quality={100}
                   priority={true}
                   layout="responsive"
                 />
               </div>
               <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
+                <h5>Damilere Atanda</h5>
+                <p>Product Designer (Ui/Ux)</p>
               </div>
             </div>
           </div>
@@ -100,103 +100,19 @@ export default function AboutUs() {
             <div>
               <div>
                 <Image
-                  src={'/image/ceo2.png'}
+                  src={'/image/about-specter.jpeg'}
                   width={295}
                   height={295}
                   alt="hero"
-                  objectFit="contain"
+                  objectFit="cover"
                   quality={100}
                   priority={true}
                   layout="responsive"
                 />
               </div>
               <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-sm-6 meet">
-            <div>
-              <div>
-                <Image
-                  src={'/image/ceo1.png'}
-                  width={295}
-                  height={295}
-                  alt="hero"
-                  objectFit="contain"
-                  quality={100}
-                  priority={true}
-                  layout="responsive"
-                />
-              </div>
-              <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-sm-6 meet">
-            <div>
-              <div>
-                <Image
-                  src={'/image/ceo2.png'}
-                  width={295}
-                  height={295}
-                  alt="hero"
-                  objectFit="contain"
-                  quality={100}
-                  priority={true}
-                  layout="responsive"
-                />
-              </div>
-              <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-sm-6 meet">
-            <div>
-              <div>
-                <Image
-                  src={'/image/ceo1.png'}
-                  width={295}
-                  height={295}
-                  alt="hero"
-                  objectFit="contain"
-                  quality={100}
-                  priority={true}
-                  layout="responsive"
-                />
-              </div>
-              <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-sm-6 meet">
-            <div>
-              <div>
-                <Image
-                  src={'/image/ceo2.png'}
-                  width={295}
-                  height={295}
-                  alt="hero"
-                  objectFit="contain"
-                  quality={100}
-                  priority={true}
-                  layout="responsive"
-                />
-              </div>
-              <div>
-                <h5>Brooklyn Simmons</h5>
-                <p>Co-Founder & CEO</p>
+                <h5>Specter Oluwasegun</h5>
+                <p>Front-end Developer</p>
               </div>
             </div>
           </div>
