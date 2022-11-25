@@ -9,17 +9,26 @@ import { Modal } from 'antd';
 import React, { useState } from 'react';
 import PasswordChange from '../PasswordChange';
 import Mappings from '../Mappings';
+import UpdateShipmentStatus from '../UpdateShipmentStatus';
 
-export default function ShipmentDetails() {
+export default function AdminShipmentDetails() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
   };
-  const handleOk = () => {
-    setIsModalOpen(false);
+
+  const showModal2 = () => {
+    setIsModalOpen2(true);
   };
+
+  const handleOk = () => {
+    setIsModalOpen2(false);
+  };
+
   const handleCancel = () => {
     setIsModalOpen(false);
+    setIsModalOpen2(false);
   };
 
   return (
@@ -30,10 +39,13 @@ export default function ShipmentDetails() {
       <div className="container-fluid">
         <div className="row justify-content-between top-bar-space">
           <h4 className="subHeader col-auto mb-2">Shipping ID - 123456789</h4>
-
           <div className="row col-sm-auto button-links">
-            <Link href="/shipment-timeline">
-              <button className="our-btn">View Timeline</button>
+            <button className="our-btn" onClick={showModal2}>
+              Update Status
+            </button>
+
+            <Link href="/admin-view-timeline">
+              <button className="our-btn our-btn-white">View Timeline</button>
             </Link>
             <button className="our-btn our-btn-white" onClick={showModal}>
               View Route Map
@@ -81,6 +93,7 @@ export default function ShipmentDetails() {
           </div>
         </div>
       </div>
+
       <Modal
         title="Shipment Tracking"
         open={isModalOpen}
@@ -89,6 +102,16 @@ export default function ShipmentDetails() {
         className="change-pass"
       >
         <Mappings />
+      </Modal>
+
+      <Modal
+        title="Update Shipment Status"
+        open={isModalOpen2}
+        onCancel={handleCancel}
+        width={900}
+        className="change-pass"
+      >
+        <UpdateShipmentStatus onOk={handleOk} />
       </Modal>
     </section>
   );

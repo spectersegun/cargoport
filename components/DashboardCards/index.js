@@ -12,15 +12,17 @@ export default function DashboardCards({ admin }) {
       {admin == true ? (
         <div className="row dashboard-cards">
           <div className="col-md-4">
-            <div className="card-details">
-              <div className="col-auto">
-                <h5>14</h5>
-                <p>Total Ongoing Shipments</p>
+            <Link href={'/admin-dashboard-shipments'}>
+              <div className="card-details">
+                <div className="col-auto">
+                  <h5>14</h5>
+                  <p>Total Ongoing Shipments</p>
+                </div>
+                <div className="col-auto">
+                  <CardOne />
+                </div>
               </div>
-              <div className="col-auto">
-                <CardOne />
-              </div>
-            </div>
+            </Link>
           </div>
 
           <div className="col-md-4">

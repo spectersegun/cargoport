@@ -34,6 +34,8 @@ export default function AdminQuoteTable({ from }) {
               ? '/invoice-dash'
               : from == 'order'
               ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
               : from == '/quote'
               ? '/quote-summary'
               : ''
@@ -67,8 +69,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -99,8 +105,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -131,8 +141,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -163,8 +177,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -195,8 +213,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -227,8 +249,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -259,8 +285,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -291,8 +321,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >
@@ -323,8 +357,12 @@ export default function AdminQuoteTable({ from }) {
           href={
             from == 'dashboard'
               ? '/invoice-dash'
-              : from == 'quote'
-              ? 'quote-summary'
+              : from == 'order'
+              ? '/admin-quote-summary'
+              : from == 'adminshipment'
+              ? '/admin-shipment-details'
+              : from == '/quote'
+              ? '/quote-summary'
               : ''
           }
         >

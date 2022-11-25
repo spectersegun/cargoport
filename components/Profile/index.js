@@ -15,6 +15,7 @@ export default function Profile({ admin }) {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+
   return (
     <section className="profile-page">
       <div className="container-fluid">

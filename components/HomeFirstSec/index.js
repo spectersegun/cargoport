@@ -122,8 +122,9 @@ export default function HomeFirstSec() {
             <div className="col-lg quote order-lg-2 order-1">
               <h4>Get Quote</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Using our quote generator, enter your origin and destination
+                ports, container size and cargo type and get shipping rates on
+                the spot.
               </p>
             </div>
           </div>
@@ -148,8 +149,8 @@ export default function HomeFirstSec() {
                 <div>
                   <h6>Ship</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
+                    Move your cargo from a port of discharge to a port of
+                    destination.
                   </p>
                 </div>
               </div>
@@ -162,8 +163,8 @@ export default function HomeFirstSec() {
                 <div>
                   <h6>Finance</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
+                    Get credit to help clear your cargo in due time, to avoid
+                    demurrage.
                   </p>
                 </div>
               </div>
@@ -176,8 +177,8 @@ export default function HomeFirstSec() {
                 <div>
                   <h6>Clear</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
+                    Efficient and effective custom clearance services (E.g.
+                    documentation)
                   </p>
                 </div>
               </div>
@@ -190,8 +191,8 @@ export default function HomeFirstSec() {
                 <div>
                   <h6>Protect</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
+                    All cargo are insured and has real-life tracking during the
+                    transit before it gets to its destination
                   </p>
                 </div>
               </div>
@@ -203,10 +204,7 @@ export default function HomeFirstSec() {
                 </div>
                 <div>
                   <h6>Destination</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
-                  </p>
+                  <p>Ensure your cargo get to your point of destination.</p>
                 </div>
               </div>
             </div>
@@ -218,8 +216,8 @@ export default function HomeFirstSec() {
                 <div>
                   <h6>Growth</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam pellentesque{' '}
+                    Our goal is to make your business increase in capacity and
+                    make your supply chain processes swift and effective.
                   </p>
                 </div>
               </div>

@@ -3,8 +3,10 @@ import ShippingDetails from '../ShippingDetails';
 import Right from '../Vectors/Right';
 import Mappings from '../Mappings';
 import { Modal } from 'antd';
+import Link from 'next/link';
+import UpdatingTimelineStatus from '../UpdatingTimelineStatus';
 
-export default function ShipmentTimeline() {
+export default function AdminShipmentTimeline({ shippingDetails, second }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -12,6 +14,7 @@ export default function ShipmentTimeline() {
   const handleOk = () => {
     setIsModalOpen(false);
   };
+
   const handleCancel = () => {
     setIsModalOpen(false);
   };
@@ -26,9 +29,11 @@ export default function ShipmentTimeline() {
               style={{ flexWrap: 'wrap' }}
             >
               <h4 className="subHeader">Shipment Timeline View</h4>
-              <button className="our-btn" onClick={showModal}>
-                View Route Map
-              </button>
+              {second && (
+                <Link href="#">
+                  <button className="our-btn">Go Back</button>
+                </Link>
+              )}
             </div>
 
             <div className="shipment-view">
@@ -152,18 +157,25 @@ export default function ShipmentTimeline() {
             </div>
           </div>
           <div className="col-lg-5">
-            <ShippingDetails />
+            {shippingDetails && <ShippingDetails />}
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-lauto">
+            <button className="our-btn" onClick={showModal}>
+              Update Timeline Status
+            </button>
           </div>
         </div>
       </div>
       <Modal
-        title="Shipment Tracking"
+        title="Update Timeline Status"
         open={isModalOpen}
         onCancel={handleCancel}
         width={900}
-        className="change-pass"
+        className="change-pass border-bottom-0"
       >
-        <Mappings />
+        <UpdatingTimelineStatus onOk={handleOk} />
       </Modal>
     </section>
   );

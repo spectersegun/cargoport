@@ -6,7 +6,7 @@ export default function admindashboardshipments() {
   return (
     <>
       <AdminDashWrapper tab={3}>
-        <AdminShipment />
+        <AdminShipment from="adminshipment" />
       </AdminDashWrapper>
     </>
   );

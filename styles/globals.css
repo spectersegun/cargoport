@@ -87,6 +87,10 @@ a {
   font-weight: 400;
   font-family: 'avenir-extralight';
 }
+.text500 {
+  font-family: 'avenir';
+  font-weight: 500;
+}
 .text600 {
   font-family: 'avenir-medium';
   font-weight: 500;
@@ -102,6 +106,17 @@ a {
 .ourfont14 {
   font-size: 14.4px;
   line-height: 20px;
+}
+.ourfont16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grid-gap-16 {
+  grid-gap: 16px;
+}
+.grid-gap-24 {
+  grid-gap: 24px;
 }
 
 p,
@@ -1221,6 +1236,7 @@ header .navbar-toggler:focus {
   line-height: 25px;
   color: #1890ff;
   font-weight: 400;
+  cursor: pointer;
 }
 .terms-nav li.active {
   font-family: 'avenir-semibold';
@@ -1278,6 +1294,9 @@ header .navbar-toggler:focus {
   font-size: 14.4px;
   line-height: 25px;
   font-family: 'avenir-extralight';
+}
+.privacy-policy .row span.sub-link a {
+  color: var(--our-blue) !important;
 }
 
 .privacy-policy .row span {
@@ -2091,7 +2110,8 @@ header .navbar-toggler:focus {
   border-radius: 8px;
   padding: 12px 16px;
 }
-.quote-innner .ant-input[type='number'] {
+.quote-innner .ant-input[type='number'],
+.quote-innner .ant-input[type='text'] {
   border: 1px solid #eeeeee;
   border-radius: 8px;
   height: 56px;
@@ -2260,7 +2280,7 @@ input.ant-input[type='date']::placeholder {
     grid-gap: 32px;
   }
   .quote-innner .ant-input[type='number'],
-  input.ant-input[type='date'] {
+  .quote-innner .ant-input[type='text'] input.ant-input[type='date'] {
     height: 40px;
   }
   .step-four .haulage-wrapper .ant-form-item {
@@ -2715,7 +2735,6 @@ input.ant-input[type='date']::placeholder {
 .change-pass .our-btn {
   background: #355c7b;
   color: var(--white);
-  width: 187px;
   font-weight: 900;
   font-size: 14.4px;
   line-height: 20px;
@@ -2758,7 +2777,7 @@ input.ant-input[type='date']::placeholder {
   font-size: 10px;
   line-height: 13px;
   border-radius: 4px;
-  width: 92px;
+  width: auto;
   height: 29px;
   padding: 8px;
   font-family: 'avenir';
@@ -3501,6 +3520,62 @@ input.ant-input[type='date']::placeholder {
 .dash-home .approved-alert .flex-wrap {
   grid-gap: 12px;
 }
+.shipments-details-page .button-links {
+  grid-gap: 1rem;
+}
+.update-shipment-status {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+.update-shipment-status h6,
+.update-shipment-status label {
+  font-weight: 500;
+  font-size: 11.52px;
+  line-height: 16px;
+  color: #585858;
+  margin-bottom: 8px;
+}
+.update-shipment-status h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+.update-shipment-status select,
+.update-shipment-status input {
+  /* height: 56px; */
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  width: 437px;
+  max-width: 100%;
+  padding: 18px 16px;
+}
+.update-shipment-status .our-btn {
+  margin-top: 40px;
+}
+.update-shipment-status select option.place {
+  color: #aaaaaa;
+}
+.update-shipment-status label {
+  margin-bottom: 17px;
+  width: 125px;
+  min-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .no-service-provider .top-bar-space {
+  grid-gap: 100px;
+} */
+
+.add-service .quote.step-two .ant-form-item {
+  margin-bottom: 24px;
+}
+.add-service .haulage-wrapper .ant-form-item:nth-child(2) {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
 
 @media only screen and (min-width: 1000px) {
   .change-pass {
@@ -3919,6 +3994,30 @@ input.ant-input[type='date']::placeholder {
   .dashboard-cards .card-details {
     padding: 1rem;
   }
+  .shipments-details-page .button-links {
+    grid-gap: 0;
+  }
+  .update-shipment-status {
+    padding-top: 6px;
+    padding-bottom: 50px;
+  }
+  .update-shipment-status h5 {
+    font-size: 14px;
+  }
+  .update-shipment-status h6,
+  .update-shipment-status label {
+    font-size: 10px;
+  }
+  .update-shipment-status select,
+  .update-shipment-status input {
+    padding: 14px 14px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .illustration-svg {
+    width: 200px;
+    height: auto;
+  }
 }
 
 /* admin dashboard  */
@@ -4160,4 +4259,23 @@ input.ant-input[type='date']::placeholder {
 }
 .preview .quotation-charges-box-one {
   border: 1px solid #d9d9d9;
+}
+
+.admin-quote-table.none-striped tbody tr:nth-child(odd) {
+  background-color: inherit;
+}
+
+.sp-page th.ant-table-selection-column {
+  /* display: none; */
+}
+
+.sp-button {
+  grid-gap: 36px;
+}
+.sp-button .our-btn-white {
+  background: #f5f5f5;
+  color: #da2828;
+  display: flex;
+  grid-gap: 2px;
+  align-items: center;
 }

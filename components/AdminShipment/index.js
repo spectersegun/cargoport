@@ -28,7 +28,7 @@ export default function AdminShipment() {
         <div className="row tabs-wrapping">
           <Tabs defaultActiveKey="1">
             <Tabs.TabPane tab="Ongoing Shipments" key="item-1">
-              <AdminQuoteTable />
+              <AdminQuoteTable from={'adminshipment'} />
             </Tabs.TabPane>
             <Tabs.TabPane tab="All Shipments" key="item-2">
               <AdminQuoteTable />

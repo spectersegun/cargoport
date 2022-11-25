@@ -109,7 +109,7 @@ export default function AdminDashWrapper({ children, h3, tab }) {
 
               {asidepage == 4 ? (
                 <li className="active">
-                  <Link href="/trade-finance">
+                  <Link href="/admin-trade-finance">
                     <span>
                       <AsideTrade color="white" />
                       Trade Finance
@@ -118,7 +118,7 @@ export default function AdminDashWrapper({ children, h3, tab }) {
                 </li>
               ) : (
                 <li className="">
-                  <Link href="/trade-finance">
+                  <Link href="/admin-trade-finance">
                     <span>
                       <AsideTrade color="#A0A0A0" />
                       Trade Finance
@@ -129,7 +129,7 @@ export default function AdminDashWrapper({ children, h3, tab }) {
 
               {asidepage == 5 ? (
                 <li className="active">
-                  <Link href="#">
+                  <Link href="/admin-service-provider">
                     <span>
                       <AsideService color="white" />
                       Service Providers
@@ -138,7 +138,7 @@ export default function AdminDashWrapper({ children, h3, tab }) {
                 </li>
               ) : (
                 <li className="">
-                  <Link href="/#">
+                  <Link href="/admin-service-provider">
                     <span>
                       <AsideService color="#A0A0A0" />
                       Service Providers
