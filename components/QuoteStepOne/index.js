@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import React from 'react';
 import SubHeader from '../QuoteWrapper/SubHeader';
 import { useRouter } from 'next/router';
 
-import { Button, Form, Input, Radio, Select } from 'antd';
-import UploadSvg from '../Vectors/UploadSvg';
+import { Button, Form, Radio, Select } from 'antd';
+// import UploadSvg from '../Vectors/UploadSvg';
 
 export default function QuoteStepOne({ dash }) {
   const router = useRouter();

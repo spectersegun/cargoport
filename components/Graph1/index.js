@@ -28,7 +28,7 @@ export const options = {
   colors: ['#214461', '#1890FF', '#307460'],
   axisTitlesPosition: 'in',
 
-  backgroundColor: '#000000',
+  // backgroundColor: '#000000',
   backgroundColor: {
     stroke: '#F0F',
     strokeWidth: 4,

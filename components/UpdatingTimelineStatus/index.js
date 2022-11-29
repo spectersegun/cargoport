@@ -12,10 +12,10 @@ export default function UpdatingTimelineStatus({ onOk }) {
       <h5>Booking Confirmed</h5>
       <div className="row justify-content-center">
         <div className="col-12 mb-4 pb-lg-1">
-          <label for="selection" className="d-block">
+          <label htmlFor="selection" className="d-block">
             Select Timeline:
           </label>
-          <select class="custom-select" id="selection">
+          <select className="custom-select" id="selection">
             <option selected className="place">
               Select shipment timeline here
             </option>
@@ -25,10 +25,10 @@ export default function UpdatingTimelineStatus({ onOk }) {
         </div>
 
         <div className="col-12 mb-4 pb-lg-1">
-          <label for="selection" className="d-block">
+          <label htmlFor="selection" className="d-block">
             Enter New Shipment Status:
           </label>
-          <select class="custom-select" id="selection">
+          <select className="custom-select" id="selection">
             <option selected className="place">
               Select the new shipmnent status here
             </option>
@@ -39,7 +39,7 @@ export default function UpdatingTimelineStatus({ onOk }) {
         </div>
 
         <div className="col-12 mb-4 pb-lg-1">
-          <label for="Location" className="d-block">
+          <label htmlFor="Location" className="d-block">
             Enter Timeline Location:
           </label>
           <input
@@ -50,7 +50,7 @@ export default function UpdatingTimelineStatus({ onOk }) {
         </div>
 
         <div className="col-12">
-          <label for="vessel" className="d-block">
+          <label htmlFor="vessel" className="d-block">
             Enter vessel number here
           </label>
           <input

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input } from 'antd';
-import { AudioOutlined, SearchOutlined } from '@ant-design/icons';
+import { SearchOutlined } from '@ant-design/icons';
 
 export default function Faq() {
   const { Search } = Input;

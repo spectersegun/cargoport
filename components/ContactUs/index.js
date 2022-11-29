@@ -13,7 +13,7 @@ export default function ContactUs() {
   };
 
   const onChange = e => {
-    // console.log('Change:', e.target.value);
+    console.log('Change:', e.target.value);
   };
 
   return (

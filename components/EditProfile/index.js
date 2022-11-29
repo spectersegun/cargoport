@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import UploadDP from '../Vectors/UploadDP';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import { useRouter } from 'next/router';
 
 export default function EditProfile() {

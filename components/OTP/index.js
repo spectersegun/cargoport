@@ -1,4 +1,4 @@
-import { Button, Checkbox, Form, Input } from 'antd';
+// import { Button, Checkbox, Form, Input } from 'antd';
 
 import React from 'react';
 import Link from 'next/link';
@@ -34,11 +34,11 @@ export default function OTP() {
         </p>
       </div>
       <div className="row otp">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class=" text-center">
-              <div class="row">
-                <div class="">
+        <div className="container">
+          <div className="row justify-content-md-center">
+            <div className=" text-center">
+              <div className="row">
+                <div className="">
                   <form action="" id="otpForm">
                     <input
                       type="text"
@@ -69,7 +69,7 @@ export default function OTP() {
                     />
                   </form>
 
-                  <button class="btn ">Verify Mail</button>
+                  <button className="btn ">Verify Mail</button>
                 </div>
                 <p className="form-footer-p">
                   Didnt get the code? <Link href="#">Resend OTP</Link>

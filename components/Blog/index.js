@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Input, Tabs, Pagination } from 'antd';
+import { Form, Input, Tabs, Pagination } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 

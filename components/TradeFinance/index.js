@@ -1,10 +1,10 @@
 import React from 'react';
 import NamingTop from '../NamingTop';
 import TradeCard from '../TradeCard';
-import LocationLine from '../Vectors/LocationLine';
-import Locations from '../Vectors/Locations';
+// import LocationLine from '../Vectors/LocationLine';
+// import Locations from '../Vectors/Locations';
 import Timer from '../Vectors/Timer';
-import TradeTrendUp from '../Vectors/TradeTrendUp';
+// import TradeTrendUp from '../Vectors/TradeTrendUp';
 
 export default function TradeFinance() {
   return (

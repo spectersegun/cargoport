@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import QuoteIcon from '../Vectors/QuoteIcon';
 import QuoteSubmitted from '../QuoteSubmitted';
 
 export default function DashNoQuote() {

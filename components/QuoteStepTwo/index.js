@@ -3,7 +3,7 @@ import React from 'react';
 import SubHeader from '../QuoteWrapper/SubHeader';
 import { useRouter } from 'next/router';
 
-import { Button, Checkbox, Form, Input, Upload, TextArea } from 'antd';
+import { Checkbox, Form, Input, Upload } from 'antd';
 import UploadSvg from '../Vectors/UploadSvg';
 
 export default function QuoteStepTwo({ dash }) {

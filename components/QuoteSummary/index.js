@@ -1,7 +1,6 @@
 import React from 'react';
 import AdditionalDetails from '../AdditionalDetails';
 import CargoDetails from '../CargoDetails';
-import ServiceProvider from '../ServiceProvider';
 import ShipmentType from '../ShipmentType';
 import SummaryDetailsQuote from '../SummaryDetailsQuote';
 

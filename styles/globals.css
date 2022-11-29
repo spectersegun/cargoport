@@ -396,7 +396,9 @@ footer .mid-sec {
 }
 .second-section {
   padding-top: 80px;
+  padding-bottom: 100px;
   background: #faf8f6;
+  
 }
 
 .second-section h6 {
@@ -434,7 +436,7 @@ footer .mid-sec {
   grid-gap: 30px;
 }
 .second-section .row:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .second-section .row.top-service {
   margin-bottom: 110px;

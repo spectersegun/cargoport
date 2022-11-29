@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import serviceTwo from '../../public/image/service-two.png';
 
 export default function HomeSecondSec() {
   return (

@@ -162,6 +162,7 @@ export default function ShipmentTimeline() {
         onCancel={handleCancel}
         width={900}
         className="change-pass"
+        onOk={handleOk}
       >
         <Mappings />
       </Modal>

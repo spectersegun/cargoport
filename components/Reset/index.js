@@ -1,6 +1,5 @@
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Thick from '../Vectors/Thick';
 
 export default function Reset() {

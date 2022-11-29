@@ -1,9 +1,5 @@
 import React from 'react';
 import { Table } from 'antd';
-import Ship from '../Vectors/Ship';
-import Locations from '../Vectors/Locations';
-import TradeTrendUp from '../Vectors/TradeTrendUp';
-import TradeTrendDown from '../TradeCard/TradeTrendDown';
 import Link from 'next/link';
 
 export default function AdminTradeTable({ from }) {

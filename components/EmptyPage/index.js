@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import React from 'react';
-import QuoteIcon from '../Vectors/QuoteIcon';
 import SubHeader from '../QuoteWrapper/SubHeader';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
