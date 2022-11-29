@@ -31,19 +31,19 @@ export default function ContactUs() {
             <div>
               <Contact />
             </div>
-            <h6>+234 812 3456 789</h6>
+            <h6>+2348038277977</h6>
           </div>
           <div className="col-auto d-flex">
             <div>
               <Contact2 />
             </div>
-            <h6>6391 Elgin St. Celina, Delaware 10299</h6>
+            <h6>No 5 Igboukwu Street, Coker, Lagos State.</h6>
           </div>
           <div className="col-auto d-flex">
             <div>
               <Contact3 />
             </div>
-            <h6>support@cargoport.com</h6>
+            <h6>hello@cargoport.trade@gmail.com</h6>
           </div>
         </div>
         <div className="send-message row justify-content-center align-items-center">

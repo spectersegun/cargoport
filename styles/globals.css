@@ -87,6 +87,10 @@ a {
   font-weight: 400;
   font-family: 'avenir-extralight';
 }
+.text500 {
+  font-family: 'avenir';
+  font-weight: 500;
+}
 .text600 {
   font-family: 'avenir-medium';
   font-weight: 500;
@@ -102,6 +106,17 @@ a {
 .ourfont14 {
   font-size: 14.4px;
   line-height: 20px;
+}
+.ourfont16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grid-gap-16 {
+  grid-gap: 16px;
+}
+.grid-gap-24 {
+  grid-gap: 24px;
 }
 
 p,
@@ -1221,6 +1236,7 @@ header .navbar-toggler:focus {
   line-height: 25px;
   color: #1890ff;
   font-weight: 400;
+  cursor: pointer;
 }
 .terms-nav li.active {
   font-family: 'avenir-semibold';
@@ -1278,6 +1294,9 @@ header .navbar-toggler:focus {
   font-size: 14.4px;
   line-height: 25px;
   font-family: 'avenir-extralight';
+}
+.privacy-policy .row span.sub-link a {
+  color: var(--our-blue) !important;
 }
 
 .privacy-policy .row span {
@@ -2091,7 +2110,8 @@ header .navbar-toggler:focus {
   border-radius: 8px;
   padding: 12px 16px;
 }
-.quote-innner .ant-input[type='number'] {
+.quote-innner .ant-input[type='number'],
+.quote-innner .ant-input[type='text'] {
   border: 1px solid #eeeeee;
   border-radius: 8px;
   height: 56px;
@@ -2260,7 +2280,7 @@ input.ant-input[type='date']::placeholder {
     grid-gap: 32px;
   }
   .quote-innner .ant-input[type='number'],
-  input.ant-input[type='date'] {
+  .quote-innner .ant-input[type='text'] input.ant-input[type='date'] {
     height: 40px;
   }
   .step-four .haulage-wrapper .ant-form-item {
@@ -2715,7 +2735,6 @@ input.ant-input[type='date']::placeholder {
 .change-pass .our-btn {
   background: #355c7b;
   color: var(--white);
-  width: 187px;
   font-weight: 900;
   font-size: 14.4px;
   line-height: 20px;
@@ -2758,7 +2777,7 @@ input.ant-input[type='date']::placeholder {
   font-size: 10px;
   line-height: 13px;
   border-radius: 4px;
-  width: 92px;
+  width: auto;
   height: 29px;
   padding: 8px;
   font-family: 'avenir';
@@ -3346,7 +3365,8 @@ input.ant-input[type='date']::placeholder {
   font-family: 'avenir-semibold';
   margin-bottom: 4px;
 }
-.quotation-charges .charges-content .flex-wrap {
+.quotation-charges .charges-content .flex-wrap,
+.previews .flex-wrap {
   grid-gap: 16px;
 }
 .quotation-charges .quotation-charges-box .only {
@@ -3461,6 +3481,7 @@ input.ant-input[type='date']::placeholder {
   display: flex;
   justify-content: space-between;
   padding: 24px 26px 24px 30px;
+  cursor: pointer;
 }
 .dashboard-cards .card-details h5 {
   font-weight: 500;
@@ -3498,6 +3519,62 @@ input.ant-input[type='date']::placeholder {
 }
 .dash-home .approved-alert .flex-wrap {
   grid-gap: 12px;
+}
+.shipments-details-page .button-links {
+  grid-gap: 1rem;
+}
+.update-shipment-status {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+.update-shipment-status h6,
+.update-shipment-status label {
+  font-weight: 500;
+  font-size: 11.52px;
+  line-height: 16px;
+  color: #585858;
+  margin-bottom: 8px;
+}
+.update-shipment-status h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+.update-shipment-status select,
+.update-shipment-status input {
+  /* height: 56px; */
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  width: 437px;
+  max-width: 100%;
+  padding: 18px 16px;
+}
+.update-shipment-status .our-btn {
+  margin-top: 40px;
+}
+.update-shipment-status select option.place {
+  color: #aaaaaa;
+}
+.update-shipment-status label {
+  margin-bottom: 17px;
+  width: 125px;
+  min-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .no-service-provider .top-bar-space {
+  grid-gap: 100px;
+} */
+
+.add-service .quote.step-two .ant-form-item {
+  margin-bottom: 24px;
+}
+.add-service .haulage-wrapper .ant-form-item:nth-child(2) {
+  border-bottom: none;
+  padding-bottom: 0px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -3914,7 +3991,291 @@ input.ant-input[type='date']::placeholder {
     width: 24px;
     height: 24px;
   }
-  .dashboard-cards .card-details{
+  .dashboard-cards .card-details {
     padding: 1rem;
   }
+  .shipments-details-page .button-links {
+    grid-gap: 0;
+  }
+  .update-shipment-status {
+    padding-top: 6px;
+    padding-bottom: 50px;
+  }
+  .update-shipment-status h5 {
+    font-size: 14px;
+  }
+  .update-shipment-status h6,
+  .update-shipment-status label {
+    font-size: 10px;
+  }
+  .update-shipment-status select,
+  .update-shipment-status input {
+    padding: 14px 14px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .illustration-svg {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* admin dashboard  */
+
+.dashboard.admin aside {
+  background-color: var(--white);
+}
+.dashboard.admin aside h3 {
+  color: var(--primary);
+}
+.dashboard.admin aside ul li {
+  color: #a0a0a0;
+}
+.dashboard.admin aside .bottom button {
+  color: #da2828;
+}
+.dashboard.admin aside .d-md-block ul li.active {
+  background: var(--primary);
+  color: var(--white);
+}
+.dashboard.admin main {
+  border-left: 1px solid #eeeeee;
+}
+
+.garph1-wrapper {
+  padding: 10px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.garph1-wrapper p {
+  color: var(--black);
+  margin-bottom: 30px;
+  margin-top: 8px;
+  font-size: 1rem;
+  /* font-family: "avenir-medium"; */
+}
+.garph1-wrapper .legends span {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  display: block;
+}
+.garph1-wrapper .legends {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.garph1-wrapper .legends .col-auto {
+  color: var(--black);
+  display: flex;
+  grid-gap: 8px;
+  font-size: 14.4px;
+  line-height: 20px;
+  align-items: center;
+}
+.admin-quote-table {
+  margin-top: 40px;
+}
+
+.admin-quote-table .ant-table-wrapper {
+  margin-top: 0px;
+}
+
+.admin-quote-table h4.ourfont14 {
+  margin-bottom: 0rem;
+  padding-bottom: 1rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: var(--white);
+}
+.admin-quote-table .ant-table-wrapper thead .ant-table-cell,
+.registered-members-table .ant-table-wrapper thead .ant-table-cell {
+  background-color: var(--white);
+}
+.admin-quote-table tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.search-by .ant-input-group-addon {
+  display: none;
+}
+.search-by .ant-input-affix-wrapper {
+  width: 437px;
+  height: 56px;
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  border: none;
+  max-width: 100%;
+}
+.search-by .ant-input-group-wrapper {
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.search-by .ant-input-group-wrapper .ant-input-prefix {
+  margin-right: 10px;
+}
+
+.registered-members-table .buttons {
+  display: flex;
+  grid-gap: 8px;
+}
+.registered-members-table .buttons .our-btn-white {
+  background: #f5f5f5;
+}
+.tabs-wrapping .admin-quote-table,
+.tabs-wrapping .ant-table-wrapper {
+  margin-top: 0px;
+}
+.tabs-wrapping .admin-quote-table h4.ourfont14 {
+  display: none;
+}
+.tabs-wrapping {
+  margin-top: 24px;
+}
+.tabs-wrapping .ant-tabs-nav {
+  margin-bottom: 0px;
+  padding-left: 1%;
+}
+.tabs-wrapping .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary);
+  font-weight: 900;
+}
+.tabs-wrapping .ant-tabs-tab .ant-tabs-tab-btn {
+  font-size: 14.4px;
+  line-height: 20px;
+  color: #585858;
+}
+.tabs-wrapping .ant-tabs-ink-bar {
+  background: var(--primary);
+  border-radius: 4px 4px 0px 0px;
+  height: 4px;
+}
+.mapping-wrapper {
+  max-width: 838px;
+  height: 417px;
+  position: relative;
+}
+
+.quote-by {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black);
+}
+.quote-by span {
+  color: var(--primary);
+}
+
+.shipments-details-card p.underlined {
+  text-decoration-line: underline;
+  font-weight: 300;
+  font-size: 14.4px;
+  line-height: 20px;
+  font-family: 'avenir-extralight';
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.dashboard.admin .shipments-details-card {
+  margin-bottom: 24px;
+  height: auto;
+}
+.assign {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.select-service-provider {
+  padding: 24px;
+  padding-bottom: 1px;
+  background: #ffffff;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+.select-service-provider > p {
+  font-weight: 900;
+  font-size: 14.4px;
+  line-height: 20px;
+  font-family: 'avenir-medium';
+  margin-bottom: 24px;
+}
+.select-service-provider button {
+  border: none;
+  background: inherit;
+}
+.select-service-provider .add svg {
+  margin-right: 8px;
+}
+.select-service-provider .ant-btn {
+  width: auto;
+  border: none;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 20px;
+  color: var(--primary);
+  box-shadow: none;
+}
+.select-service-provider .ant-space .ant-space-item {
+  width: -webkit-fill-available;
+}
+.select-service-provider .ant-space .ant-space-item:last-child {
+  width: auto;
+}
+.select-service-provider .top-list {
+  grid-gap: 8px;
+}
+.select-service-provider .ant-select-selector {
+  border: 1px solid #eeeeee !important;
+  border-radius: 8px !important;
+  height: 56px !important;
+}
+.select-service-provider .ant-input[type='text'] {
+  border: 1px solid #eeeeee !important;
+  border-radius: 8px !important;
+  height: 56px !important;
+}
+.select-service-provider .d-flex {
+  align-items: flex-start;
+}
+
+.preview .quotation-charges {
+  background-color: inherit;
+  margin-top: 24pxśF;
+}
+.previews {
+  background-color: var(--white);
+  padding: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+}
+.preview .quotation-charges-box-one {
+  border: 1px solid #d9d9d9;
+}
+
+.admin-quote-table.none-striped tbody tr:nth-child(odd) {
+  background-color: inherit;
+}
+
+.sp-page th.ant-table-selection-column {
+  /* display: none; */
+}
+
+.sp-button {
+  grid-gap: 36px;
+}
+.sp-button .our-btn-white {
+  background: #f5f5f5;
+  color: #da2828;
+  display: flex;
+  grid-gap: 2px;
+  align-items: center;
 }

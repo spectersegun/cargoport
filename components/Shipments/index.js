@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import TradeCard from '../TradeCard';
 
@@ -10,7 +11,9 @@ export default function Shipments() {
             Total Shipments - 10
           </h4>
           <div className="col-auto ">
-            <button className="our-btn">Start new shipment</button>
+            <Link href={'quote-step-one'}>
+              <button className="our-btn">Start new shipment</button>
+            </Link>
           </div>
         </div>
         <div className="row trade-wrapper">

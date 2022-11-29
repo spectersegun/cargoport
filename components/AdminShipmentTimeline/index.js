@@ -1,0 +1,182 @@
+import React, { useState } from 'react';
+import ShippingDetails from '../ShippingDetails';
+import Right from '../Vectors/Right';
+import Mappings from '../Mappings';
+import { Modal } from 'antd';
+import Link from 'next/link';
+import UpdatingTimelineStatus from '../UpdatingTimelineStatus';
+
+export default function AdminShipmentTimeline({ shippingDetails, second }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <section className="shipment-timeline">
+      <div className="container-fluid">
+        <div className="row top-bar-space">
+          <div className="col-lg-7">
+            <div
+              className="d-flex justify-content-between"
+              style={{ flexWrap: 'wrap' }}
+            >
+              <h4 className="subHeader">Shipment Timeline View</h4>
+              {second && (
+                <Link href="#">
+                  <button className="our-btn">Go Back</button>
+                </Link>
+              )}
+            </div>
+
+            <div className="shipment-view">
+              <div className="d-flex">
+                <div className="col-auto icon-wrapper">
+                  <Right />
+                </div>
+                <div className="col">
+                  <h4>CGI</h4>
+                  <h5>Container arrival at first POL (Gate in)</h5>
+                  <div
+                    className="d-flex justify-content-between "
+                    style={{ flexWrap: 'wrap' }}
+                  >
+                    <div className="col-lg-auto col-6">
+                      <h6>Status</h6>
+                      <p>Gate in</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Location</h6>
+                      <p>Apapa Lagos State Nigeria</p>
+                    </div>
+                    <div className="col-lg-auto col-6"></div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Date</h6>
+                      <p>2022-08-26 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-auto icon-wrapper">
+                  <Right />
+                </div>
+                <div className="col">
+                  <h4>CLL</h4>
+                  <h5>Container arrival at first POL</h5>
+                  <div
+                    className="d-flex justify-content-between "
+                    style={{ flexWrap: 'wrap' }}
+                  >
+                    <div className="col-lg-auto col-6">
+                      <h6>Status</h6>
+                      <p>Load</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Location</h6>
+                      <p>Apapa Lagos State Nigeria</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Vessel Number</h6>
+                      <p>MAERSK CHENNAI, SG </p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Date</h6>
+                      <p>2022-08-26 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-auto icon-wrapper">
+                  <Right />
+                </div>
+                <div className="col">
+                  <h4>CDT</h4>
+                  <h5>Container discharge at T/S port (Transhipment)</h5>
+                  <div
+                    className="d-flex justify-content-between "
+                    style={{ flexWrap: 'wrap' }}
+                  >
+                    <div className="col-lg-auto col-6">
+                      <h6>Status</h6>
+                      <p>Discharge</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Location</h6>
+                      <p>Algeciras Andulasia, Spain</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Vessel Number</h6>
+                      <p>MAERSK CHENNAI, SG </p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Date</h6>
+                      <p>2022-08-26 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="col-auto icon-wrapper">
+                  <Right />
+                </div>
+                <div className="col">
+                  <h4>CLT</h4>
+                  <h5>Container loaded at T/S port (Transhipment)</h5>
+                  <div
+                    className="d-flex justify-content-between "
+                    style={{ flexWrap: 'wrap' }}
+                  >
+                    <div className="col-lg-auto col-6">
+                      <h6>Status</h6>
+                      <p>Load</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Location</h6>
+                      <p>Algeciras Andulasia, Spain</p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Vessel Number</h6>
+                      <p>DELPHIS RIGA, HK </p>
+                    </div>
+                    <div className="col-lg-auto col-6">
+                      <h6>Date</h6>
+                      <p>2022-08-26 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-5">
+            {shippingDetails && <ShippingDetails />}
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-lauto">
+            <button className="our-btn" onClick={showModal}>
+              Update Timeline Status
+            </button>
+          </div>
+        </div>
+      </div>
+      <Modal
+        title="Update Timeline Status"
+        open={isModalOpen}
+        onCancel={handleCancel}
+        width={900}
+        className="change-pass border-bottom-0"
+      >
+        <UpdatingTimelineStatus onOk={handleOk} />
+      </Modal>
+    </section>
+  );
+}
