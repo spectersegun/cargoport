@@ -424,7 +424,7 @@ export default function Privacy() {
               </div>
 
               <div className="row">
-                <h5>Children's privacy </h5>
+                <h5>Children&#39;s privacy </h5>
                 <p>
                   <span>
                     Our Site and the related services and products are not
