@@ -27,19 +27,21 @@ export default function ContactUs() {
           </h5>
         </div>
         <div className="row justify-content-center major-contact">
-          <div className="col-auto d-flex">
+          <div className="col-lg-4 col-md-6 d-flex">
             <div>
               <Contact />
             </div>
             <h6>+2348038277977</h6>
           </div>
-          <div className="col-auto d-flex">
+
+          <div className="col-lg-4 col-md-6 d-flex">
             <div>
               <Contact2 />
             </div>
             <h6>No 5 Igboukwu Street, Coker, Lagos State.</h6>
           </div>
-          <div className="col-auto d-flex">
+
+          <div className="col-lg-4 col-md-6 d-flex">
             <div>
               <Contact3 />
             </div>
