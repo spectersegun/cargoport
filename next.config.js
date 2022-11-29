@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   swcMinify: true,
-};
+  images: {
+    unoptimized: true,
+    loader: 'cloudinary',
+    path: '/'
+  }
+}
 
-module.exports = nextConfig;
+
+module.exports = nextConfig
